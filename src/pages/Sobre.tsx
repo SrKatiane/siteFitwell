@@ -79,7 +79,7 @@ const Sobre = () => {
               </p>
               
               <p>
-                Hoje, com 40 anos de vida e experiência, a Fitwell já pode dizer o que realmente funciona para entregar às pessoas o que elas PRECISAM.
+                Hoje, com 43 anos de vida e experiência, a Fitwell já pode dizer o que realmente funciona para entregar às pessoas o que elas PRECISAM.
               </p>
               
               <p>
