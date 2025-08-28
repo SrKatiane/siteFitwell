@@ -54,7 +54,7 @@ const Sobre = () => {
               <span className="text-fitwell-orange">Espaço Fitwell</span> em Canela
             </h1>
             <p className="text-xl md:text-2xl text-white/90">
-              43 anos transformando vidas através da saúde e bem-estar
+              42 anos transformando vidas através da saúde e bem-estar
             </p>
           </div>
         </div>
@@ -79,7 +79,7 @@ const Sobre = () => {
               </p>
               
               <p>
-                Hoje, com 43 anos de vida e experiência, a Fitwell já pode dizer o que realmente funciona para entregar às pessoas o que elas PRECISAM.
+                Hoje, com 42 anos de vida e experiência, a Fitwell já pode dizer o que realmente funciona para entregar às pessoas o que elas PRECISAM.
               </p>
               
               <p>
