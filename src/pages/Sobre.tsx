@@ -54,7 +54,7 @@ const Sobre = () => {
               <span className="text-fitwell-orange">Espaço Fitwell</span> em Canela
             </h1>
             <p className="text-xl md:text-2xl text-white/90">
-              40 anos transformando vidas através da saúde e bem-estar
+              43 anos transformando vidas através da saúde e bem-estar
             </p>
           </div>
         </div>
