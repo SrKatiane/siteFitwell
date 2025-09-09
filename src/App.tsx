@@ -18,6 +18,7 @@ import Nutricao from "./pages/Nutricao";
 import ProgramaAdaptacao from "./pages/ProgramaAdaptacao";
 import Sobre from "./pages/Sobre";
 import Horarios from "./pages/Horarios";
+import ScrollToTop from "./ScrollToTop";
 
 const queryClient = new QueryClient();
 
@@ -27,6 +28,7 @@ const App = () => (
       <Toaster />
       <Sonner />
       <BrowserRouter>
+      <ScrollToTop />
         <Routes>
           <Route path="/" element={<Index />} />
           <Route path="/musculacao" element={<Musculacao />} />
