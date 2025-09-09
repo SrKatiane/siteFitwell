@@ -43,7 +43,7 @@ const Natacao = () => {
       <section className="relative h-[60vh] flex items-center justify-center overflow-hidden">
         <div className="absolute inset-0">
           <img 
-            src={natacaoImg} 
+            src="/NAT 6.jpg" 
             alt="Natação na Fitwell"
             className="w-full h-full object-cover"
           />
@@ -101,7 +101,7 @@ const Natacao = () => {
                     <div className={`${modalidade.color} h-2`}></div>
                     <div className="relative h-48 overflow-hidden">
                       <img 
-                        src={natacaoImg} 
+                        src= "NAT 6.jpg" 
                         alt={modalidade.title}
                         className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
                       />

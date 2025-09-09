@@ -62,7 +62,7 @@ const Natacao = () => {
       <section className="relative h-[60vh] flex items-center justify-center overflow-hidden">
         <div className="absolute inset-0">
           <img 
-            src={natacaoImg} 
+            src="/NAT 1.jpg"
             alt="Natação na Fitwell"
             className="w-full h-full object-cover"
           />

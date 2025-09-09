@@ -18,7 +18,7 @@ const ModalidadesSection = () => {
       title: "Musculação",
       description: "Equipamentos anatômicos e acompanhamento para funcional",
       color: "bg-fitwell-orange",
-      image: "/SALA TREINO 3.jpg",
+      image: "/FUNCIONAL 4.jpg",
       link: "/musculacao"
     },
     {
