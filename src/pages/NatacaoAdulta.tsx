@@ -62,7 +62,7 @@ const Natacao = () => {
       <section className="relative h-[60vh] flex items-center justify-center overflow-hidden">
         <div className="absolute inset-0">
           <img 
-            src="/NAT 1.jpg"
+            src="/NAT 6.jpg"
             alt="Natação na Fitwell"
             className="w-full h-full object-cover"
           />
@@ -70,13 +70,13 @@ const Natacao = () => {
         </div>
         
         <div className="relative z-10 container mx-auto px-4 lg:px-8 text-white">
-          <Link to="/" className="inline-flex items-center gap-2 text-white/80 hover:text-white mb-6 transition-colors">
+          <Link to="/natacao" className="inline-flex items-center gap-2 text-white/80 hover:text-white mb-6 transition-colors">
             <ArrowLeft className="w-5 h-5" />
-            Voltar
+            Voltar para Natação
           </Link>
           
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6">
-            Natação na <span className="text-fitwell-blue-light">Fitwell</span>
+            Natação <span className="text-fitwell-blue-light">Adulto</span>
           </h1>
           <p className="text-xl md:text-2xl text-white/90 max-w-3xl">
             Nadar é viver com mais saúde, leveza e liberdade.

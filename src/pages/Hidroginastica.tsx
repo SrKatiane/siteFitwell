@@ -68,7 +68,7 @@ const Hidroginastica = () => {
       <section className="relative h-[60vh] flex items-center justify-center overflow-hidden">
         <div className="absolute inset-0">
           <img 
-            src={hidroginasticaImg} 
+            src="/HIDRO 1.jpg" 
             alt="Hidroginástica na Fitwell"
             className="w-full h-full object-cover"
           />

@@ -9,12 +9,12 @@ import natacaoImg from "@/assets/modalidades/natacao.jpg";
 const NatacaoInfantil = () => {
   const niveis = [
     {
-      icon: Shield,
+      icon: Zap,
       title: "Adaptação 1",
       description: "Para crianças que precisam perder o medo da água e iniciar o desenvolvimento dos domínios básicos aquáticos."
     },
     {
-      icon: Heart,
+      icon: Zap,
       title: "Adaptação 2", 
       description: "Para crianças que já têm algum domínio, mas precisam de aulas mais lúdicas e dinâmicas, preparando o terreno para a técnica."
     },
@@ -81,7 +81,7 @@ const NatacaoInfantil = () => {
       <section className="relative h-[60vh] flex items-center justify-center overflow-hidden">
         <div className="absolute inset-0">
           <img 
-            src={natacaoImg} 
+            src="/NAT 1.jpg" 
             alt="Natação Infantil na Fitwell"
             className="w-full h-full object-cover"
           />

@@ -13,7 +13,8 @@ const Natacao = () => {
       title: "Natação para Bebês",
       description: "Aulas especiais para bebês a partir de 1 ano, com metodologia própria e acompanhamento dos pais",
       color: "bg-fitwell-blue-light",
-      link: "/natacao-bebe"
+      link: "/natacao-bebe",
+      image: "/BEBE 5.jpg"
     },
     {
       icon: GraduationCap,
@@ -24,14 +25,16 @@ const Natacao = () => {
     </>
   ),
       color: "bg-fitwell-orange",
-      link: "/natacao-infantil"
+      link: "/natacao-infantil",
+      image: "/NAT 1.jpg"
     },
     {
       icon: Users,
       title: "Natação Adulta",
       description: "Para todos os níveis, desde iniciantes até quem busca aprimoramento técnico ou condicionamento físico.",
       color: "bg-fitwell-blue",
-      link: "/natacao-adulta"
+      link: "/natacao-adulta",
+      image: "/NAT 6.jpg"
     }
   ];
 
@@ -101,7 +104,7 @@ const Natacao = () => {
                     <div className={`${modalidade.color} h-2`}></div>
                     <div className="relative h-48 overflow-hidden">
                       <img 
-                        src= "NAT 6.jpg" 
+                        src= {modalidade.image}
                         alt={modalidade.title}
                         className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
                       />

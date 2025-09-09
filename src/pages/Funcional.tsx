@@ -66,7 +66,7 @@ const Funcional = () => {
       <section className="relative h-[60vh] flex items-center justify-center overflow-hidden">
         <div className="absolute inset-0">
           <img 
-            src={funcionalImg} 
+            src="/FUNCIONAL 3.jpg" 
             alt="Treinamento Funcional na Fitwell"
             className="w-full h-full object-cover"
           />
