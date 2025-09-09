@@ -18,14 +18,18 @@ const Natacao = () => {
     {
       icon: GraduationCap,
       title: "Natação Infantil",
-      description: "Metodologia Tibum com mais de 30 anos de experiência, respeitando o tempo de cada criança",
+       description: (
+    <>
+      Metodologia <span style={{ color: "#5DD8EB", fontWeight: 600  }}>Tibum</span> com mais de 30 anos de experiência, respeitando o tempo de cada criança
+    </>
+  ),
       color: "bg-fitwell-orange",
       link: "/natacao-infantil"
     },
     {
       icon: Users,
       title: "Natação Adulta",
-      description: "Para todos os níveis, desde iniciantes até quem busca aprimoramento técnico",
+      description: "Para todos os níveis, desde iniciantes até quem busca aprimoramento técnico ou condicionamento físico.",
       color: "bg-fitwell-blue",
       link: "/natacao-adulta"
     }
@@ -66,10 +70,10 @@ const Natacao = () => {
         <div className="container mx-auto px-4 lg:px-8">
           <div className="max-w-4xl mx-auto text-center">
             <p className="text-lg md:text-xl text-fitwell-dark/80 leading-relaxed mb-8">
-              É considerada um dos exercícios mais completos por movimentar grande parte dos músculos e articulações do corpo desenvolvendo a flexibilidade, a potência, a resistência, o ritmo e a coordenação.
+              A natação oferece múltiplos benefícios, melhorando a saúde cardiovascular, a capacidade respiratória e a flexibilidade, além de fortalecer os músculos e promover a saúde mental
             </p>
             <p className="text-lg md:text-xl text-fitwell-dark/80 leading-relaxed">
-              Libera tensões, diminui estresse, colesterol, hipertensão, obesidade e principalmente melhora a circulação sanguínea e o sistema cardio-respiratório.
+              Ela auxilia no controle de peso, na melhora da postura e no crescimento saudável ao movimentar o corpo por inteiro. Promove a segurança no meio aquatico e aumento da auto estima nos praticantes deste esporte.
             </p>
           </div>
         </div>

@@ -145,7 +145,7 @@ const ConviteVisitaSection = () => {
                 <div>
                   <h4 className="font-semibold text-fitwell-dark">Horário de Funcionamento</h4>
                   <p className="text-fitwell-dark/70">
-                    Segunda a Sexta: 6h às 13:30h – 15:00h às 21:30h<br />
+                    Segunda a Sexta: 6h às 13:00h – 15:00h às 21:30h<br />
                     Sábados: 08:30h às 12:00h<br />
                   </p>
                 </div>

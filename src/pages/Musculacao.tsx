@@ -36,7 +36,7 @@ const Musculacao = () => {
   ];
 
   const paraQuem = [
-    "Quem está iniciando e quer um recomeço seguro com acompanhamento.",
+    "Quem está iniciando ou quer um recomeço seguro com acompanhamento.",
     "Quem já treina, mas quer melhorar postura, resistência e mobilidade.",
     "Quem precisa prevenir lesões, dores articulares ou problemas de coluna.",
     "Quem busca longevidade e quer envelhecer com força e autonomia."

@@ -101,7 +101,7 @@ const Sobre = () => {
             
             <div className="space-y-6 text-lg text-fitwell-dark/80">
               <p>
-                Em 1000m² dispomos de recepção, sala de estar, sala de treinamento físico (conhecida "musculação"), sala de atividades em grupo, piscina térmica (8m x 16m x 1,35 de profundidade), clínica de Fisioterapia (parceria), Pilates, sala de avaliação física e atendimento nutricional.
+                Em 1000m² dispomos de recepção, sala de estar, sala de treinamento físico (conhecida "musculação"), sala de atividades em grupo, piscina térmica (8m x 16m x 1,35 de profundidade), clínica de Fisioterapia e Pilates (parceria), sala de avaliação física e atendimento nutricional.
               </p>
               
               <p>

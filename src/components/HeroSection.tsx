@@ -25,7 +25,7 @@ const HeroSection = () => {
           </h1>
           
           <p className="text-lg md:text-xl lg:text-2xl mb-8 text-white/90 max-w-3xl mx-auto leading-relaxed">
-            Atividades físicas personalizadas para todas as idades, com acompanhamento e carinho que só a Fitwell oferece.
+            Atividades físicas para todas as idades, com acompanhamento e carinho que só a Fitwell oferece.
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">

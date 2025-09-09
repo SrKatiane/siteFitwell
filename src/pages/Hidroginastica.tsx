@@ -36,11 +36,11 @@ const Hidroginastica = () => {
   ];
 
   const paraQuemHidro = [
-    "Pessoas com dor nas articulações, problemas na coluna ou osteoporose.",
-    "Idosos que querem se manter ativos com segurança.",
-    "Quem está começando a se exercitar e busca algo leve e prazeroso.",
-    "Gestantes (com liberação médica).",
-    "Pessoas que valorizam saúde, mobilidade e bem-estar."
+    "Pessoas que precisam melhorar a circulação sanguínea e a capacidade respiratória.",
+    "Para quem busca fortalecimento muscular sem comprometer as articulações.",
+    "Para quem deseja mais coordenação e flexibilidade.",
+    "Para pessoas com hipertensão e querem se prevenir de doenças cardiovasculares.",
+    "Para pessoas que buscam o bem estar e amam se sociabilizar."
   ];
 
   const paraQuemHiit = [

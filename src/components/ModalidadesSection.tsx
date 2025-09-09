@@ -16,7 +16,7 @@ const ModalidadesSection = () => {
     {
       icon: Dumbbell,
       title: "Musculação",
-      description: "Equipamentos modernos e acompanhamento personalizado",
+      description: "Equipamentos anatômicos e acompanhamento para funcional",
       color: "bg-fitwell-orange",
       image: musculacaoImg,
       link: "/musculacao"
@@ -24,7 +24,7 @@ const ModalidadesSection = () => {
     {
       icon: Waves,
       title: "Natação",
-      description: "Piscinas aquecidas para todas as idades",
+      description: "Piscina aquecida para todas as idades",
       color: "bg-fitwell-blue-light",
       image: natacaoImg,
       link: "/natacao"
@@ -32,7 +32,7 @@ const ModalidadesSection = () => {
     {
       icon: Waves,
       title: "Hidroginástica / HidroHIIT",
-      description: "Exercícios aquáticos de baixo impacto",
+      description: "Exercícios aquáticos com baixo impacto para as articulações",
       color: "bg-fitwell-blue-light",
       image: hidroginasticaImg,
       link: "/hidroginastica"
@@ -40,7 +40,7 @@ const ModalidadesSection = () => {
     {
       icon: Music,
       title: "FitDance / Ritmos",
-      description: "Dança e diversão para movimentar o corpo",
+      description: "Dança e diversão para te liberar do estresse diário",
       color: "bg-fitwell-orange-light",
       image: fitdanceImg,
       link: "/fitdance"
@@ -48,7 +48,7 @@ const ModalidadesSection = () => {
     {
       icon: Zap,
       title: "Funcional",
-      description: "Treinos dinâmicos para o dia a dia",
+      description: "Treinos para você estar apto para os movimentos do dia a dia",
       color: "bg-fitwell-orange",
       image: funcionalImg,
       link: "/funcional"

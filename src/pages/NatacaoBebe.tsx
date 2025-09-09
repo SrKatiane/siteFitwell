@@ -47,7 +47,7 @@ const NatacaoBebe = () => {
 
   const diferenciais = [
     "Professores experientes em bebês e formação contínua",
-    "Piscina aquecida, limpa e com profundidade ideal para essa faixa etária",
+    "Piscina aquecida, limpa e com equipamentos adequados pra trabalhar com essa idade",
     "Ritmo respeitado: sem forçar, sem pressão",
     "Aulas com a presença dos pais na água, fortalecendo vínculos",
     "Atividades lúdicas com músicas e brinquedos pedagógicos",
@@ -107,7 +107,7 @@ const NatacaoBebe = () => {
         <div className="container mx-auto px-4 lg:px-8">
           <div className="max-w-4xl mx-auto text-center">
             <p className="text-lg md:text-xl text-fitwell-dark/80 leading-relaxed mb-8">
-              A natação para bebês é muito mais do que um momento fofo na piscina — é uma experiência rica em estímulos, emoções e descobertas.
+              A natação para bebês é muito mais do que um momento "fofo" na piscina — é uma experiência rica em estímulos, emoções e descobertas.
             </p>
             <p className="text-lg md:text-xl text-fitwell-dark/80 leading-relaxed mb-8">
               Na Fitwell, esse momento é vivido com toda a atenção, carinho e segurança que seu bebê merece.
@@ -228,7 +228,7 @@ const NatacaoBebe = () => {
               Um espaço onde o bebê é ouvido (mesmo sem falar)
             </h2>
             <p className="text-lg md:text-xl text-white/90 leading-relaxed mb-6">
-              Sabemos que cada bebê reage à água de um jeito. Alguns entram sorrindo. Outros, tímidos.
+              Sabemos que cada bebê reage à água de um jeito. Alguns logo se soltam, outros levam mais tempo.
             </p>
             <p className="text-lg md:text-xl text-white/90 leading-relaxed mb-6">
               Na Fitwell, não existe pressa. Existe escuta, empatia e respeito.

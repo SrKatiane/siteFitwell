@@ -10,8 +10,8 @@ const Funcional = () => {
   const diferenciais = [
     {
       icon: Dumbbell,
-      title: "Treinos personalizados e em grupo",
-      description: "você tem atenção individual, mesmo em aulas coletivas"
+      title: "Checkup inicial e periódicos",
+      description: "Para garantir um treino que respeita seu corpo e seu momento atua"
     },
     {
       icon: BarChart3,

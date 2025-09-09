@@ -26,7 +26,7 @@ const NatacaoInfantil = () => {
     {
       icon: Trophy,
       title: "Aprendizado 2",
-      description: "Aprimoramento técnico e iniciação à competição, com saídas, viradas e evolução de desempenho."
+      description: "Aprimoramento técnico e evolução de desempenho com iniciação às competições (caso queiram)."
     }
   ];
 
@@ -69,7 +69,7 @@ const NatacaoInfantil = () => {
     {
       icon: Globe,
       title: "Conteúdo além da técnica",
-      description: "segurança aquática, inclusão social e consciência ambiental com o 'Reino de Azulia'"
+      description: "segurança aquática, inclusão social e consciência ambiental com o 'Reino encantado de Azulia'"
     }
   ];
 
@@ -143,7 +143,7 @@ const NatacaoInfantil = () => {
 
           <div className="max-w-2xl mx-auto mb-12">
             <p className="text-lg text-fitwell-dark/80 leading-relaxed text-center">
-              Tudo acontece em <span className="text-fitwell-orange font-semibold">4 níveis evolutivos</span>, a partir dos 3 a 4 anos:
+              Tudo acontece em <span className="text-fitwell-orange font-semibold">4 níveis evolutivos</span>, a partir dos 3 anos:
             </p>
           </div>
 
@@ -208,7 +208,7 @@ const NatacaoInfantil = () => {
               Um mundo encantador e educativo
             </h2>
             <p className="text-lg md:text-xl text-white/90 leading-relaxed mb-6">
-              Uma vez por mês, as crianças mergulham no <span className="font-semibold">"Reino de Azulia"</span>, uma narrativa envolvente que ensina valores importantes, tornando a experiência ainda mais mágica.
+              Uma vez por mês, as crianças mergulham no <span className="font-semibold">"Reino encantado de Azulia"</span>, uma narrativa envolvente que ensina valores importantes, tornando a experiência ainda mais mágica.
             </p>
             <p className="text-lg md:text-xl text-white/90 leading-relaxed">
               Nada de aulas repetitivas — aqui o aprendizado é natural, envolvente e significativo.

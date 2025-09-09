@@ -27,7 +27,6 @@ const Fisioterapia = () => {
   ];
 
   const comoFunciona = [
-    "Avaliação clínica detalhada e mapeamento de sintomas",
     "Plano de tratamento individualizado, focado em alívio da dor e recuperação funcional",
     "Uso de técnicas manuais, recursos terapêuticos e exercícios específicos",
     "Atendimento direto com o fisioterapeuta, dentro da estrutura da Fitwell"
@@ -193,7 +192,7 @@ const Fisioterapia = () => {
               Precisa de atendimento fisioterapêutico?
             </h2>
             <p className="text-lg text-fitwell-dark/80 mb-8">
-              Agende sua avaliação gratuita com o fisioterapeuta parceiro e comece seu tratamento no nosso espaço, com toda a estrutura que você precisa.
+              Agende sua avaliação com o fisioterapeuta parceiro e comece seu tratamento no nosso espaço, com toda a estrutura que você precisa.
             </p>
             <Button variant="hero" size="xl">
               Agendar avaliação com fisioterapeuta

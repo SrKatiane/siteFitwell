@@ -1,4 +1,6 @@
-import { MapPin, Phone, Mail, Clock, Instagram, Facebook } from "lucide-react";
+import { MapPin, Phone, Mail, Clock, Instagram, Facebook, MessageCircle } from "lucide-react";
+import { FaWhatsapp } from "react-icons/fa";
+
 
 const Footer = () => {
   return (
@@ -58,6 +60,11 @@ const Footer = () => {
               
               <div className="flex items-center space-x-3">
                 <Phone className="w-5 h-5 text-fitwell-orange-light" />
+                <p className="text-white/80">(54) 3282-4317</p>
+              </div>
+
+              <div className="flex items-center space-x-3">
+                <FaWhatsapp className="w-5 h-5 text-fitwell-orange-light" />
                 <p className="text-white/80">(54) 98128-6867</p>
               </div>
               
@@ -69,7 +76,7 @@ const Footer = () => {
               <div className="flex items-start space-x-3">
                 <Clock className="w-5 h-5 text-fitwell-orange-light mt-1" />
                 <div className="text-white/80 text-sm">
-                  <p>Seg-Sex: 6h às 13:30h – 15:00h às 21:30h</p>
+                  <p>Seg-Sex: 6h às 13:00h – 15:00h às 21:30h</p>
                   <p>Sáb: 08:30h às 12:00h</p>
                 </div>
               </div>

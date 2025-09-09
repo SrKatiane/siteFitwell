@@ -25,12 +25,12 @@ const Natacao = () => {
     },
     {
       icon: Droplets,
-      title: "Piscina climatizada",
-      description: "ambiente limpo e acolhedor."
+      title: "Piscina aquecida",
+      description: "com utilização de biomassa (ecológica) numa temperatura sempre ideal.."
     },
     {
       icon: Heart,
-      title: "Ambiente sem pressão e julgamento",
+      title: "Ambiente sem pressão ou julgamento",
       description: "Aqui, todo mundo tem seu tempo e seu porquê."
     }
   ];
@@ -40,13 +40,14 @@ const Natacao = () => {
     "Pessoas que querem melhorar a capacidade respiratória, postura ou mobilidade.",
     "Alunos com sobrepeso, dores articulares ou outras restrições, pois a água reduz o impacto nas articulações.",
     "Quem busca uma atividade completa, segura e revigorante.",
-    "E até quem está em reabilitação física, com recomendação médica."
+    "E até quem está em reabilitação física, com recomendação médica.",
+    "Quem quer usar o meio aquático como liberação de estresse."
   ];
 
   const beneficios = [
     "Melhora a respiração e o condicionamento físico",
     "Fortalece músculos e articulações sem impacto",
-    "Alivia dores, tensões e reduz o estresse",
+    "Alivia dores, estresse e reduz peso o corporal",
     "Melhora a postura, o equilíbrio e a coordenação",
     "Queima calorias e acelera o metabolismo",
     "Contribui para a saúde cardiovascular",
@@ -132,7 +133,7 @@ const Natacao = () => {
         <div className="container mx-auto px-4 lg:px-8">
           <div className="max-w-4xl mx-auto">
             <h2 className="text-3xl md:text-4xl font-bold text-center text-fitwell-dark mb-12">
-              Quem pode fazer natação na Fitwell?
+              Quem "deveria" fazer natação na Fitwell?
             </h2>
             
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">

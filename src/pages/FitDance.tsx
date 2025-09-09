@@ -206,9 +206,6 @@ const FitDance = () => {
             <h2 className="text-3xl md:text-4xl font-bold text-fitwell-dark mb-8">
               Topa entrar no ritmo?
             </h2>
-            <p className="text-lg text-fitwell-dark/80 mb-6">
-              As aulas acontecem em horários variados, com turmas para diferentes níveis.
-            </p>
             <p className="text-lg text-fitwell-dark/80 mb-8">
               Você pode agendar uma aula experimental gratuita e vir dançar com a gente — sem pressão, só com diversão.
             </p>
