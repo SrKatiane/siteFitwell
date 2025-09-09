@@ -18,7 +18,7 @@ const ModalidadesSection = () => {
       title: "Musculação",
       description: "Equipamentos anatômicos e acompanhamento para funcional",
       color: "bg-fitwell-orange",
-      image: musculacaoImg,
+      image: "/SALA TREINO 3.jpg",
       link: "/musculacao"
     },
     {
@@ -26,7 +26,7 @@ const ModalidadesSection = () => {
       title: "Natação",
       description: "Piscina aquecida para todas as idades",
       color: "bg-fitwell-blue-light",
-      image: natacaoImg,
+      image: "NAT 6.jpg",
       link: "/natacao"
     },
     {
@@ -34,7 +34,7 @@ const ModalidadesSection = () => {
       title: "Hidroginástica / HidroHIIT",
       description: "Exercícios aquáticos com baixo impacto para as articulações",
       color: "bg-fitwell-blue-light",
-      image: hidroginasticaImg,
+      image: "/HIDRO 1.jpg",
       link: "/hidroginastica"
     },
     {
@@ -50,7 +50,7 @@ const ModalidadesSection = () => {
       title: "Funcional",
       description: "Treinos para você estar apto para os movimentos do dia a dia",
       color: "bg-fitwell-orange",
-      image: funcionalImg,
+      image: "FUNCIONAL 3.jpg",
       link: "/funcional"
     },
     {
@@ -58,7 +58,7 @@ const ModalidadesSection = () => {
       title: "Fisioterapia",
       description: "Cuidado especializado para reabilitação e prevenção",
       color: "bg-fitwell-blue",
-      image: fisioterapiaImg,
+      image: "/fisio 9.jpg",
       link: "/fisioterapia"
     },
     {

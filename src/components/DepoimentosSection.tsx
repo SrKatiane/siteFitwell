@@ -75,10 +75,15 @@ const DepoimentosSection = () => {
             Quer compartilhar sua experiência conosco?
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
-            <div className="bg-white rounded-lg px-6 py-3 shadow-md">
-              <span className="text-fitwell-dark font-semibold">⭐ 4.9/5</span>
-              <span className="text-fitwell-dark/60 ml-2">• 200+ avaliações</span>
-            </div>
+            <a
+              href="https://www.google.com/search?sca_esv=fe6362944b97d7fe&rlz=1C1NDCM_pt-BRBR957BR957&sxsrf=AE3TifOIy4bZDzv26ANrzAxmS01CUh65QQ:1757448129834&si=AMgyJEuzsz2NflaaWzrzdpjxXXRaJ2hfdMsbe_mSWso6src8s7SxpYUgbpllsiib9T3i6B_s5kTYFEeAOSJ8QDw0E-tfYrXPgaQEw5XQRXIrVXZpxPLivp1CsTi7N9k6qw1lbMWhnXSSUfUxMYi8jCcQP_hS0accdA%3D%3D&q=Espa%C3%A7o+Fitwell+%7C+Canela+RS+Reviews&sa=X&ved=2ahUKEwjIufW7vMyPAxWmK7kGHWU7IKcQ0bkNegQIQhAE&biw=1536&bih=695&dpr=1.25"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="bg-white rounded-lg px-6 py-3 shadow-md hover:bg-fitwell-orange-light/20 transition-colors"
+            >
+              <span className="text-fitwell-dark font-semibold">⭐ 4.8/5</span>
+              <span className="text-fitwell-dark/60 ml-2">• 115+ avaliações</span>
+            </a>
           </div>
         </div>
       </div>

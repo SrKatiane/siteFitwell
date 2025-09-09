@@ -7,7 +7,7 @@ const HeroSection = () => {
       {/* Background Image with Overlay */}
       <div className="absolute inset-0">
         <img 
-          src={heroImage} 
+          src="/RECEPÇÃO 1.jpg"  
           alt="Pessoas se exercitando na Fitwell" 
           className="w-full h-full object-cover"
         />
