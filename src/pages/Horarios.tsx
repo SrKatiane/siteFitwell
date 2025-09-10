@@ -22,9 +22,9 @@ const Horarios = () => {
     sabado: ""
   }, {
     hora: "07:30",
-    segunda: "COND",
+    segunda: "NATAÇÃO ADULTO COND",
     terca: "",
-    quarta: "COND",
+    quarta: "NATAÇÃO ADULTO COND",
     quinta: "",
     sexta: "LOC PIS",
     sabado: ""
@@ -131,7 +131,7 @@ const Horarios = () => {
     quarta: "",
     quinta: ["NATAÇÃO INFANTIL"],
     sexta: "",
-    sabado: ["LOC PIS (2 raias)", "ADAP II"]
+    sabado: ["LOC PIS (2 raias)", "NATAÇÃO INFANTIL"]
   }, {
     hora: "10:30",
     segunda: ["NATAÇÃO INFANTIL", "LOC PIS"],
@@ -238,9 +238,9 @@ const Horarios = () => {
     sabado: ""
   }, {
     hora: "17:00",
-    segunda: ["TREN"],
+    segunda: ["TREIN"],
     terca: "LOC PIS",
-    quarta: ["TREN", "LOC PIS"],
+    quarta: ["TREIN", "LOC PIS"],
     quinta: "",
     sexta: "LOC PIS",
     sabado: ""
@@ -248,7 +248,7 @@ const Horarios = () => {
     hora: "17:05",
     segunda: "",
     terca: "",
-    quarta: ["NATAÇÃO INICIANTE"],
+    quarta: ["NATAÇÃO ADULTO INICIANTE"],
     quinta: "",
     sexta: "",
     sabado: ""
@@ -283,7 +283,7 @@ const Horarios = () => {
     quarta: ["TREIN"],
     quinta: ["NATAÇÃO INFANTIL"],
     sexta: ["NATAÇÃO INFANTIL"],
-    sabado: [""]
+    sabado: ""
   }, {
     hora: "19:15",
     segunda: "HIDRO HIIT",
