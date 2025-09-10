@@ -198,7 +198,7 @@ const Sobre = () => {
                       ) : (
                         <div className="flex flex-col">
                           <div className="h-64 bg-gray-50 flex items-center justify-center">
-                            <div className="w-16 h-16 rounded-full bg-gradient-to-br from-fitwell-orange to-fitwell-blue-light flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
+                            <div className="w-16 h-16 rounded-full bg-fitwell-orange flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
                               <Users className="w-8 h-8 text-white" />
                             </div>
                           </div>
@@ -223,7 +223,7 @@ const Sobre = () => {
                     <CardContent className="p-0">
                       <div className="flex flex-col">
                         <div className="h-64 bg-gray-50 flex items-center justify-center">
-                          <div className="w-16 h-16 rounded-full bg-gradient-to-br from-fitwell-blue-light to-fitwell-orange flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
+                          <div className="w-16 h-16 rounded-full bg-fitwell-orange flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
                             <Users className="w-8 h-8 text-white" />
                           </div>
                         </div>
@@ -247,7 +247,7 @@ const Sobre = () => {
                     <CardContent className="p-0">
                       <div className="flex flex-col">
                         <div className="h-64 bg-gray-50 flex items-center justify-center">
-                          <div className="w-16 h-16 rounded-full bg-gradient-to-br from-fitwell-blue-light to-fitwell-orange flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
+                          <div className="w-16 h-16 rounded-full bg-fitwell-orange flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
                             <Users className="w-8 h-8 text-white" />
                           </div>
                         </div>
