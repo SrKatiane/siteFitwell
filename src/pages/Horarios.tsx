@@ -78,18 +78,18 @@ const Horarios = () => {
     sabado: ""
   }, {
     hora: "09:10",
-    segunda: ["APREND II", "ADAP II"],
+    segunda: ["NATAÇÃO INFANTIL"],
     terca: "",
-    quarta: ["APREND I", "ADAP II"],
+    quarta: ["NATAÇÃO INFANTIL"],
     quinta: "",
-    sexta: ["APRED II", "LOC PIS"],
+    sexta: ["NATAÇÃO INFANTIL", "LOC PIS"],
     sabado: ""
   },{
     hora: "09:15",
     segunda: "",
-    terca: ["APREND I", "TREIN. MIRIM"],
+    terca: ["NATAÇÃO INFANTIL", "TREIN. MIRIM"],
     quarta: "",
-    quinta: ["APREND I", "TREIN. MIRIM"],
+    quinta: ["NATAÇÃO INFANTIL", "TREIN. MIRIM"],
     sexta: "",
     sabado: ""
   }, {
@@ -118,27 +118,27 @@ const Horarios = () => {
     sabado: ""
   },{
     hora: "09:50",
-    segunda: [ "ADAP I", "ADAP II", "LOC PIS"],
+    segunda: [ "NATAÇÃO INFANTIL", "LOC PIS"],
     terca: "",
-    quarta: ["ADAP I", "ADAP II", "LOC PIS"],
+    quarta: ["NATAÇÃO INFANTIL", "LOC PIS"],
     quinta: "",
-    sexta: ["ADAP II", "APREND I", "LOC PIS"],
+    sexta: ["NATAÇÃO INFANTIL", "LOC PIS"],
     sabado: ""
   }, {
     hora: "10:00",
     segunda: "",
-    terca: ["ADAP I", "ADAP II"],
+    terca: ["NATAÇÃO INFANTIL"],
     quarta: "",
-    quinta: ["ADAP I", "ADAP II"],
+    quinta: ["NATAÇÃO INFANTIL"],
     sexta: "",
     sabado: ["LOC PIS (2 raias)", "ADAP II"]
   }, {
     hora: "10:30",
-    segunda: ["ADAP I", "APREND I", "LOC PIS"],
-    terca: ["ADAP I", "APREND I", "APREND II", "LOC PIS"],
-    quarta: ["ADAP I", "APREND I", "LOC PIS"],
+    segunda: ["NATAÇÃO INFANTIL", "LOC PIS"],
+    terca: ["NATAÇÃO INFANTIL", "LOC PIS"],
+    quarta: ["NATAÇÃO INFANTIL", "LOC PIS"],
     quinta: ["LOC PIS"],
-    sexta: ["ADAP II", "APREND I", "LOC PIS"],
+    sexta: ["NATAÇÃO INFANTIL", "LOC PIS"],
     sabado: ""
   }, {
     hora: "10:40",
@@ -147,7 +147,7 @@ const Horarios = () => {
     quarta: "",
     quinta: ["NATAÇÃO BEBÊS III"],
     sexta: "",
-    sabado: "ADAP I"
+    sabado: "NATAÇÃO INFANTIL"
   }, {
     hora: "10:45",
     segunda: "",
@@ -162,7 +162,7 @@ const Horarios = () => {
     terca: "",
     quarta: ["LOC PIS", "NAT"],
     quinta: "",
-    sexta: ["ADAP I", "ADAP II", "LOC PIS"],
+    sexta: ["NATAÇÃO INFANTIL", "LOC PIS"],
     sabado: ""
   }, {
     hora: "11:15",
@@ -179,14 +179,14 @@ const Horarios = () => {
     quarta: "",
     quinta: "",
     sexta: "",
-    sabado: "ADAP I"
+    sabado: "NATAÇÃO INFANTIL"
   },{
     hora: "12:00",
     segunda: "LOC PIS",
     terca: "LOC PIS",
     quarta: "LOC PIS",
     quinta: "LOC PIS",
-    sexta: [],
+    sexta: "",
     sabado: ""
   },{
     hora: "13:00",
@@ -215,9 +215,9 @@ const Horarios = () => {
   }, {
     hora: "15:30",
     segunda: "LOC PIS",
-    terca: ["APREND I", "APREND II", "LOC PIS"],
+    terca: ["NATAÇÃO INFANTIL", "LOC PIS"],
     quarta: "LOC PIS",
-    quinta: ["APREND I", "APREND II", "LOC PIS"],
+    quinta: ["NATAÇÃO INFANTIL", "LOC PIS"],
     sexta: "LOC PIS",
     sabado: ""
   }, {
@@ -254,19 +254,19 @@ const Horarios = () => {
     sabado: ""
   }, {
     hora: "17:10",
-    segunda: ["ADAP I"],
+    segunda: ["NATAÇÃO INFANTIL"],
     terca: "",
-    quarta: ["ADAP I"],
+    quarta: ["NATAÇÃO INFANTIL"],
     quinta: "",
     sexta: "",
     sabado: ""
   },{
     hora: "17:50",
-    segunda: ["ADAP I", "ADAP II", "APREND I"],
+    segunda: ["NATAÇÃO INFANTIL"],
     terca: "",
-    quarta: ["ADAP I", "ADAP II", "APREND I"],
+    quarta: ["NATAÇÃO INFANTIL"],
     quinta: "",
-    sexta: ["ADAP I"],
+    sexta: ["NATAÇÃO INFANTIL"],
     sabado: ""
   },{
     hora: "18:00",
@@ -279,10 +279,10 @@ const Horarios = () => {
   }, {
     hora: "18:30",
     segunda: ["TREIN"],
-    terca: ["ADAP II", "APREND I", "APREND II"],
+    terca: ["NATAÇÃO INFANTIL"],
     quarta: ["TREIN"],
-    quinta: ["ADAP II", "APREND I", "APREND II"],
-    sexta: ["APREND I"],
+    quinta: ["NATAÇÃO INFANTIL"],
+    sexta: ["NATAÇÃO INFANTIL"],
     sabado: [""]
   }, {
     hora: "19:15",
@@ -295,16 +295,16 @@ const Horarios = () => {
   }, {
     hora: "18:00",
     segunda: "",
-    terca: "FIT DANCE",
+    terca: "FITDANCE",
     quarta: "",
-    quinta: "FIT DANCE",
+    quinta: "FITDANCE",
     sexta: "",
     sabado: ""
   }, {
     hora: "20:00",
-    segunda: "NATAÇÃO INICIANTE",
+    segunda: "NATAÇÃO ADULTO INICIANTE",
     terca: "NATAÇÃO ADULTO COND",
-    quarta: "NATAÇÃO INICIANTE",
+    quarta: "NATAÇÃO ADULTO INICIANTE",
     quinta: "NATAÇÃO ADULTO COND",
     sexta: "LOC PIS",
     sabado: ""
@@ -323,7 +323,7 @@ const Horarios = () => {
     if (activity.includes("NATAÇÃO BEBÊ")) return "bg-pink-500 text-white";
     if (activity.includes("HIDROGINÁSTICA")) return "bg-yellow-400 text-black";
     if (activity.includes("HIDRO HIIT")) return "bg-red-500 text-white";
-    if (activity.includes("FIT DANCE")) return "bg-green-600 text-white";
+    if (activity.includes("FITDANCE")) return "bg-green-600 text-white";
     if (activity.includes("APRENDIZ MISTO")) return "bg-cyan-300 text-black";
     return "bg-gray-100 text-gray-800";
   };
