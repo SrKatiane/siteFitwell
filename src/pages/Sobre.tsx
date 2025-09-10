@@ -15,28 +15,28 @@ const Sobre = () => {
 
   const equipeAdministrativa = [
     { nome: "Marilda Mengue Rocha", cargo: "Diretora", foto: "/Marilda.png"},
-    { nome: "Heloisa Helena Vaccari", cargo: "Aux Administrativa" },
+    { nome: "Heloisa Helena Vaccari", cargo: "Aux Administrativa"},
     { nome: "Neuza Mengue Collorio", cargo: "Aux Administrativa" },
     { nome: "Claudia Costa", cargo: "Consultora de vendas" },
     { nome: "Lisiane Almeida de Souza", cargo: "Consultora de vendas" },
-    { nome: "Silvana Cardoso", cargo: "Consultora de vendas" },
+    { nome: "Silvana Cardoso", cargo: "Consultora de vendas", foto: "/Silvana.png" },
     { nome: "Morgana Rehbein", cargo: "Consultora de vendas" },
     { nome: "Agatha de Souza", cargo: "Estagiária Recepção" },
-    { nome: "Eva Maria Dering", cargo: "Serviços de Limpeza" },
+    { nome: "Eva Maria Dering", cargo: "Serviços de Limpeza", foto: "/Eva.png" },
     { nome: "Vera J. Pereira", cargo: "Serviços de Limpeza" }
   ];
 
   const equipePedagogica = [
-    { nome: "Marilda Mengue Rocha", cargo: "Professora de Ed. Física" },
-    { nome: "Cleide Godoy", cargo: "Professora de  Ed. Física" },
-    { nome: "Daniele Mantovaneli", cargo: "Professora de  Ed. Física" },
-    { nome: "Magda Cabral", cargo: "Professora de  Ed. Física" },
-    { nome: "Rocio Falcon", cargo: "Professora de  Ed. Física" },
+    { nome: "Marilda Mengue Rocha", cargo: "Professora de Ed. Física", foto: "/Marilda.png" },
+    { nome: "Cleide Godoy", cargo: "Professora de  Ed. Física", foto: "/Cleide.png" },
+    { nome: "Daniele Mantovaneli", cargo: "Professora de  Ed. Física", foto: "/Danielle.png" },
+    { nome: "Magda Cabral", cargo: "Professora de  Ed. Física", foto: "/Magda.png" },
+    { nome: "Rocio Falcon", cargo: "Professora de  Ed. Física", foto: "/Rocio.png" },
     { nome: "Sabrina Novello", cargo: "Professora de  Ed. Física" },
     { nome: "Suzana Maria Dischinger", cargo: "Professora de  Ed. Física" },
     { nome: "Cristian Freitas", cargo: "Professor de  Ed. Física" },
     { nome: "Marcondes Gomes Cansanção", cargo: "Professor de  Ed. Física" },
-    { nome: "Paulo Fernando Correa Pereira", cargo: "Professor de  Ed. Física" },
+    { nome: "Paulo Fernando Correa Pereira", cargo: "Professor de  Ed. Física", foto: "/Paulo.png" },
     { nome: "Daniela Carpinteiro Cravalho", cargo: "Estagiária de Ed. Física" },
     { nome: "Carlos Alberto da Silva Junior", cargo: "Estagiário de Ed. Física" },
     { nome: "Jonas Alves Barbosa", cargo: "Estagiário de Ed. Física" },
@@ -181,51 +181,19 @@ const Sobre = () => {
                 {equipeAdministrativa.map((membro, index) => (
                   <Card key={index} className="overflow-hidden group hover:scale-105 transition-all duration-300 hover:shadow-lg bg-white border border-gray-200/30">
                     <CardContent className="p-0">
-                      {index === 0 ? (
-                        <div className="flex flex-col">
-                          <div className="h-80 overflow-hidden">
+                      <div className="flex flex-col">
+                        <div className="h-80 overflow-hidden flex items-center justify-center bg-gray-50">
+                          {membro.foto ? (
                             <img 
-                              src="/Marilda.png" 
-                              alt="Marilda Mengue Rocha"
+                              src={membro.foto}
+                              alt={membro.nome}
                               className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300"
                             />
-                          </div>
-                          <div className="p-6 text-center">
-                            <h4 className="font-bold text-fitwell-dark text-lg mb-2">{membro.nome}</h4>
-                            <p className="text-gray-600 text-sm">{membro.cargo}</p>
-                          </div>
-                        </div>
-                      ) : (
-                        <div className="flex flex-col">
-                          <div className="h-64 bg-gray-50 flex items-center justify-center">
+                          ) : (
                             <div className="w-16 h-16 rounded-full bg-fitwell-orange flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
                               <Users className="w-8 h-8 text-white" />
                             </div>
-                          </div>
-                          <div className="p-6 text-center">
-                            <h4 className="font-bold text-fitwell-dark text-lg mb-2">{membro.nome}</h4>
-                            <p className="text-gray-600 text-sm">{membro.cargo}</p>
-                          </div>
-                        </div>
-                      )}
-                    </CardContent>
-                  </Card>
-                ))}
-              </div>
-            </div>
-
-            {/* Equipe Técnica */}
-            <div>
-              <h3 className="text-2xl font-bold text-fitwell-dark mb-8 text-center">Equipe Técnica</h3>
-              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-                {equipePedagogica.map((membro, index) => (
-                  <Card key={index} className="overflow-hidden group hover:scale-105 transition-all duration-300 hover:shadow-lg bg-white border border-gray-200/30">
-                    <CardContent className="p-0">
-                      <div className="flex flex-col">
-                        <div className="h-64 bg-gray-50 flex items-center justify-center">
-                          <div className="w-16 h-16 rounded-full bg-fitwell-orange flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
-                            <Users className="w-8 h-8 text-white" />
-                          </div>
+                          )}
                         </div>
                         <div className="p-6 text-center">
                           <h4 className="font-bold text-fitwell-dark text-lg mb-2">{membro.nome}</h4>
@@ -238,18 +206,57 @@ const Sobre = () => {
               </div>
             </div>
 
+            {/* Equipe Técnica */}
+            <div className="mb-16">
+            <h3 className="text-2xl font-bold text-fitwell-dark mb-8 text-center">Equipe Técnica</h3>
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+              {equipePedagogica.map((membro, index) => (
+                <Card key={index} className="overflow-hidden group hover:scale-105 transition-all duration-300 hover:shadow-lg bg-white border border-gray-200/30">
+                  <CardContent className="p-0">
+                    <div className="flex flex-col">
+                      <div className="h-80 overflow-hidden flex items-center justify-center bg-gray-50">
+                        {membro.foto ? (
+                          <img 
+                            src={membro.foto}
+                            alt={membro.nome}
+                            className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300"
+                          />
+                        ) : (
+                          <div className="w-16 h-16 rounded-full bg-fitwell-orange flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
+                            <Users className="w-8 h-8 text-white" />
+                          </div>
+                        )}
+                      </div>
+                      <div className="p-6 text-center">
+                        <h4 className="font-bold text-fitwell-dark text-lg mb-2">{membro.nome}</h4>
+                        <p className="text-gray-600 text-sm">{membro.cargo}</p>
+                      </div>
+                    </div>
+                  </CardContent>
+                </Card>
+              ))}
+            </div>
+          </div>
             {/* terceirizados */}
-            <div>
+            <div className="mb-16">
               <h3 className="text-2xl font-bold text-fitwell-dark mb-8 text-center">Equipe Terceirizada</h3>
               <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
                 {terceirizados.map((membro, index) => (
                   <Card key={index} className="overflow-hidden group hover:scale-105 transition-all duration-300 hover:shadow-lg bg-white border border-gray-200/30">
                     <CardContent className="p-0">
                       <div className="flex flex-col">
-                        <div className="h-64 bg-gray-50 flex items-center justify-center">
-                          <div className="w-16 h-16 rounded-full bg-fitwell-orange flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
-                            <Users className="w-8 h-8 text-white" />
-                          </div>
+                        <div className="h-80 overflow-hidden flex items-center justify-center bg-gray-50">
+                          {membro.foto ? (
+                            <img 
+                              src={membro.foto}
+                              alt={membro.nome}
+                              className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300"
+                            />
+                          ) : (
+                            <div className="w-16 h-16 rounded-full bg-fitwell-orange flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
+                              <Users className="w-8 h-8 text-white" />
+                            </div>
+                          )}
                         </div>
                         <div className="p-6 text-center">
                           <h4 className="font-bold text-fitwell-dark text-lg mb-2">{membro.nome}</h4>

@@ -1,6 +1,13 @@
 import { Button } from "@/components/ui/button";
-import { Menu, X } from "lucide-react";
+import { 
+  DropdownMenu,
+  DropdownMenuContent,
+  DropdownMenuItem,
+  DropdownMenuTrigger,
+} from "@/components/ui/dropdown-menu";
+import { Menu, X, ChevronDown } from "lucide-react";
 import { useState } from "react";
+import { Link } from "react-router-dom";
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -22,7 +29,38 @@ const Header = () => {
           <nav className="hidden md:flex items-center space-x-8">
             <a href="/" className="text-fitwell-dark hover:text-fitwell-orange transition-colors">Home</a>
             <a href="/sobre" className="text-fitwell-dark hover:text-fitwell-orange transition-colors">Sobre</a>
-            <a href="/#modalidades" className="text-fitwell-dark hover:text-fitwell-orange transition-colors">Modalidades</a>
+            
+            {/* Modalidades Dropdown */}
+            <DropdownMenu>
+              <DropdownMenuTrigger className="flex items-center text-fitwell-dark hover:text-fitwell-orange transition-colors">
+                Modalidades
+                <ChevronDown className="ml-1 h-4 w-4" />
+              </DropdownMenuTrigger>
+              <DropdownMenuContent className="w-48">
+                <DropdownMenuItem asChild>
+                  <Link to="/musculacao" className="cursor-pointer">Musculação</Link>
+                </DropdownMenuItem>
+                <DropdownMenuItem asChild>
+                  <Link to="/natacao" className="cursor-pointer">Natação</Link>
+                </DropdownMenuItem>
+                <DropdownMenuItem asChild>
+                  <Link to="/hidroginastica" className="cursor-pointer">Hidroginástica</Link>
+                </DropdownMenuItem>
+                <DropdownMenuItem asChild>
+                  <Link to="/funcional" className="cursor-pointer">Funcional</Link>
+                </DropdownMenuItem>
+                <DropdownMenuItem asChild>
+                  <Link to="/fitdance" className="cursor-pointer">FitDance</Link>
+                </DropdownMenuItem>
+                <DropdownMenuItem asChild>
+                  <Link to="/fisioterapia" className="cursor-pointer">Fisioterapia</Link>
+                </DropdownMenuItem>
+                <DropdownMenuItem asChild>
+                  <Link to="/nutricao" className="cursor-pointer">Nutrição</Link>
+                </DropdownMenuItem>
+              </DropdownMenuContent>
+            </DropdownMenu>
+            
             <a href="/programa-adaptacao" className="text-fitwell-dark hover:text-fitwell-orange transition-colors">Programa de Adaptação</a>
             <a href="/horarios" className="text-fitwell-dark hover:text-fitwell-orange transition-colors">Horários</a>
           </nav>
@@ -55,7 +93,19 @@ const Header = () => {
             <nav className="py-4 space-y-2">
               <a href="/" className="block px-4 py-2 text-fitwell-dark hover:text-fitwell-orange transition-colors">Home</a>
               <a href="/sobre" className="block px-4 py-2 text-fitwell-dark hover:text-fitwell-orange transition-colors">Sobre</a>
-              <a href="/#modalidades" className="block px-4 py-2 text-fitwell-dark hover:text-fitwell-orange transition-colors">Modalidades</a>
+              
+              {/* Modalidades expandidas no mobile */}
+              <div className="px-4 py-2">
+                <span className="text-fitwell-dark font-medium">Modalidades:</span>
+              </div>
+              <Link to="/musculacao" className="block px-6 py-2 text-sm text-fitwell-dark hover:text-fitwell-orange transition-colors">• Musculação</Link>
+              <Link to="/natacao" className="block px-6 py-2 text-sm text-fitwell-dark hover:text-fitwell-orange transition-colors">• Natação</Link>
+              <Link to="/hidroginastica" className="block px-6 py-2 text-sm text-fitwell-dark hover:text-fitwell-orange transition-colors">• Hidroginástica</Link>
+              <Link to="/funcional" className="block px-6 py-2 text-sm text-fitwell-dark hover:text-fitwell-orange transition-colors">• Funcional</Link>
+              <Link to="/fitdance" className="block px-6 py-2 text-sm text-fitwell-dark hover:text-fitwell-orange transition-colors">• FitDance</Link>
+              <Link to="/fisioterapia" className="block px-6 py-2 text-sm text-fitwell-dark hover:text-fitwell-orange transition-colors">• Fisioterapia</Link>
+              <Link to="/nutricao" className="block px-6 py-2 text-sm text-fitwell-dark hover:text-fitwell-orange transition-colors">• Nutrição</Link>
+              
               <a href="/programa-adaptacao" className="block px-4 py-2 text-fitwell-dark hover:text-fitwell-orange transition-colors">Programa de Adaptação</a>
               <a href="/horarios" className="block px-4 py-2 text-fitwell-dark hover:text-fitwell-orange transition-colors">Horários</a>
               <div className="px-4 py-2">
