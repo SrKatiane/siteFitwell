@@ -15,14 +15,15 @@ const Sobre = () => {
 
   const equipeAdministrativa = [
     { nome: "Marilda Mengue Rocha", cargo: "Diretora", foto: "/Marilda.png"},
-    { nome: "Danielle Mantovaneli", cargo: "Coordenadora Geral" },
-    { nome: "Magda Cabral", cargo: "Coordenadora Técnica do Setor Aquático" },
-    { nome: "Neuza Collorio", cargo: "Financeiro" },
-    { nome: "Miriam Bernardes", cargo: "Administrativo" },
+    { nome: "Heloisa Helena Vaccari", cargo: "Aux Administrativa" },
+    { nome: "Neuza Mengue Collorio", cargo: "Aux Administrativa" },
+    { nome: "Claudia Costa", cargo: "Consultora de vendas" },
+    { nome: "Lisiane Almeida de Souza", cargo: "Consultora de vendas" },
     { nome: "Silvana Cardoso", cargo: "Consultora de vendas" },
-    { nome: "Crisele Cordeiro", cargo: "Consultora de vendas" },
-    { nome: "Eva Maria Dahring", cargo: "Setor de Limpeza" },
-    { nome: "Flávlia dos Santos", cargo: "Setor Limpeza" }
+    { nome: "Morgana Rehbein", cargo: "Consultora de vendas" },
+    { nome: "Agatha de Souza", cargo: "Estagiária Recepção" },
+    { nome: "Eva Maria Dering", cargo: "Serviços de Limpeza" },
+    { nome: "Vera J. Pereira", cargo: "Serviços de Limpeza" }
   ];
 
   const equipePedagogica = [
@@ -203,9 +204,9 @@ const Sobre = () => {
               </div>
             </div>
 
-            {/* Equipe Pedagógica */}
+            {/* Equipe Técnica */}
             <div>
-              <h3 className="text-2xl font-bold text-fitwell-dark mb-8 text-center">Equipe Pedagógica</h3>
+              <h3 className="text-2xl font-bold text-fitwell-dark mb-8 text-center">Equipe Técnica</h3>
               <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
                 {equipePedagogica.map((membro, index) => (
                   <Card key={index} className="overflow-hidden group hover:scale-105 transition-all duration-300 hover:shadow-lg bg-white border border-gray-200/30">
