@@ -14,7 +14,7 @@ const Sobre = () => {
   ];
 
   const equipeAdministrativa = [
-    { nome: "Marilda Mengue Rocha", cargo: "Diretora" },
+    { nome: "Marilda Mengue Rocha", cargo: "Diretora", foto: "/Marilda.png"},
     { nome: "Danielle Mantovaneli", cargo: "Coordenadora Geral" },
     { nome: "Magda Cabral", cargo: "Coordenadora Técnica do Setor Aquático" },
     { nome: "Neuza Collorio", cargo: "Financeiro" },
@@ -42,21 +42,28 @@ const Sobre = () => {
       <Header />
       
       {/* Hero Section */}
-      <section className="relative bg-gradient-to-r from-fitwell-dark to-fitwell-blue-light/80 text-white pt-24 pb-16">
-        <div className="container mx-auto px-4 lg:px-8">
+            <section className="relative h-[60vh] flex items-center justify-center overflow-hidden">
+        <div className="absolute inset-0">
+          <img 
+            src="/DSC_3408 (2).jpg"
+            alt="Natação na Fitwell"
+            className="w-full h-full object-cover"
+          />
+          <div className="absolute inset-0 bg-gradient-to-r from-fitwell-dark/80 to-fitwell-dark/40"></div>
+        </div>
+        
+        <div className="relative z-10 container mx-auto px-4 lg:px-8 text-white">
           <Link to="/" className="inline-flex items-center gap-2 text-white/80 hover:text-white mb-8 transition-colors">
             <ArrowLeft className="w-4 h-4" />
             Voltar ao início
           </Link>
           
-          <div className="max-w-4xl">
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6">
+          <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6">
               <span className="text-fitwell-orange">Espaço Fitwell</span> em Canela
-            </h1>
-            <p className="text-xl md:text-2xl text-white/90">
+          </h1>
+          <p className="text-xl md:text-2xl text-white/90">
               42 anos transformando vidas através da saúde e bem-estar
-            </p>
-          </div>
+          </p>
         </div>
       </section>
 
@@ -147,7 +154,7 @@ const Sobre = () => {
       {/* Equipe */}
       <section className="py-16 bg-fitwell-orange-lighter/20">
         <div className="container mx-auto px-4 lg:px-8">
-          <div className="max-w-6xl mx-auto">
+          <div className="max-w-7xl mx-auto">
             <h2 className="text-3xl md:text-4xl font-bold text-fitwell-dark mb-4 text-center">
               <Users className="w-8 h-8 text-fitwell-orange inline mr-3" />
               Nossa Equipe Fitwell
@@ -156,35 +163,67 @@ const Sobre = () => {
               Somos dedicados a auxiliar nossos clientes a obter a melhor experiência e resultados dentro do nosso espaço. Nossa preocupação está na saúde e bem estar de todos.
             </p>
             
-            <div className="grid md:grid-cols-2 gap-12">
-              {/* Equipe Administrativa */}
-              <div>
-                <h3 className="text-2xl font-bold text-fitwell-dark mb-6">Equipe Administrativa</h3>
-                <div className="space-y-4">
-                  {equipeAdministrativa.map((membro, index) => (
-                    <Card key={index}>
-                      <CardContent className="p-4">
-                        <h4 className="font-semibold text-fitwell-dark">{membro.nome}</h4>
-                        <p className="text-fitwell-orange text-sm">{membro.cargo}</p>
-                      </CardContent>
-                    </Card>
-                  ))}
-                </div>
+            {/* Equipe Administrativa */}
+            <div className="mb-16">
+              <h3 className="text-2xl font-bold text-fitwell-dark mb-8 text-center">Equipe Administrativa</h3>
+              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                {equipeAdministrativa.map((membro, index) => (
+                  <Card key={index} className="overflow-hidden group hover:scale-105 transition-all duration-300 hover:shadow-lg bg-white border border-gray-200/30">
+                    <CardContent className="p-0">
+                      {index === 0 ? (
+                        <div className="flex flex-col">
+                          <div className="h-80 overflow-hidden">
+                            <img 
+                              src="/Marilda.png" 
+                              alt="Marilda Mengue Rocha"
+                              className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300"
+                            />
+                          </div>
+                          <div className="p-6 text-center">
+                            <h4 className="font-bold text-fitwell-dark text-lg mb-2">{membro.nome}</h4>
+                            <p className="text-gray-600 text-sm">{membro.cargo}</p>
+                          </div>
+                        </div>
+                      ) : (
+                        <div className="flex flex-col">
+                          <div className="h-64 bg-gray-50 flex items-center justify-center">
+                            <div className="w-16 h-16 rounded-full bg-gradient-to-br from-fitwell-orange to-fitwell-blue-light flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
+                              <Users className="w-8 h-8 text-white" />
+                            </div>
+                          </div>
+                          <div className="p-6 text-center">
+                            <h4 className="font-bold text-fitwell-dark text-lg mb-2">{membro.nome}</h4>
+                            <p className="text-gray-600 text-sm">{membro.cargo}</p>
+                          </div>
+                        </div>
+                      )}
+                    </CardContent>
+                  </Card>
+                ))}
               </div>
+            </div>
 
-              {/* Equipe Pedagógica */}
-              <div>
-                <h3 className="text-2xl font-bold text-fitwell-dark mb-6">Equipe Pedagógica</h3>
-                <div className="space-y-4">
-                  {equipePedagogica.map((membro, index) => (
-                    <Card key={index}>
-                      <CardContent className="p-4">
-                        <h4 className="font-semibold text-fitwell-dark">{membro.nome}</h4>
-                        <p className="text-fitwell-orange text-sm">{membro.cargo}</p>
-                      </CardContent>
-                    </Card>
-                  ))}
-                </div>
+            {/* Equipe Pedagógica */}
+            <div>
+              <h3 className="text-2xl font-bold text-fitwell-dark mb-8 text-center">Equipe Pedagógica</h3>
+              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                {equipePedagogica.map((membro, index) => (
+                  <Card key={index} className="overflow-hidden group hover:scale-105 transition-all duration-300 hover:shadow-lg bg-white border border-gray-200/30">
+                    <CardContent className="p-0">
+                      <div className="flex flex-col">
+                        <div className="h-64 bg-gray-50 flex items-center justify-center">
+                          <div className="w-16 h-16 rounded-full bg-gradient-to-br from-fitwell-blue-light to-fitwell-orange flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
+                            <Award className="w-8 h-8 text-white" />
+                          </div>
+                        </div>
+                        <div className="p-6 text-center">
+                          <h4 className="font-bold text-fitwell-dark text-lg mb-2">{membro.nome}</h4>
+                          <p className="text-gray-600 text-sm">{membro.cargo}</p>
+                        </div>
+                      </div>
+                    </CardContent>
+                  </Card>
+                ))}
               </div>
             </div>
           </div>

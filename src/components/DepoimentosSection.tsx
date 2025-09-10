@@ -1,29 +1,16 @@
 import { Card, CardContent } from "@/components/ui/card";
-import { Star, Quote } from "lucide-react";
+import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from "@/components/ui/carousel";
+import Autoplay from "embla-carousel-autoplay";
 
 const DepoimentosSection = () => {
-  const depoimentos = [
-    {
-      nome: "Maria Silva",
-      idade: "45 anos",
-      modalidade: "Hidroginástica",
-      texto: "Na Fitwell encontrei muito mais que exercícios. Encontrei uma família! O carinho e atenção de todos fizeram toda diferença na minha jornada.",
-      rating: 5
-    },
-    {
-      nome: "João Santos",
-      idade: "32 anos", 
-      modalidade: "Musculação",
-      texto: "Profissionais incríveis e estrutura completa. Em 6 meses consegui resultados que nunca imaginei. Recomendo de olhos fechados!",
-      rating: 5
-    },
-    {
-      nome: "Ana Costa",
-      idade: "28 anos",
-      modalidade: "FitDance",
-      texto: "As aulas de FitDance são pura diversão! Perdi peso sem perceber, porque estava me divertindo tanto. Ambiente acolhedor e professores maravilhosos.",
-      rating: 5
-    }
+  const reviewImages = [
+    "/lovable-uploads/79868ee1-5428-4b80-85e0-13327ef496b4.png",
+    "/lovable-uploads/bd50c931-9384-4dae-8766-99a1c66ac781.png", 
+    "/lovable-uploads/30a38517-0a13-4207-8b9f-87ad924fe713.png",
+    "/lovable-uploads/221394fa-5027-4452-a34f-9d686ee3fb6a.png",
+    "/lovable-uploads/a51fd3a8-2e89-4f88-bebe-a058e71397cc.png",
+    "/lovable-uploads/0b1c173c-f9bc-48d9-be7b-aa16b0d1c26a.png",
+    "/lovable-uploads/2dee16af-d430-47ee-979a-66cec2b02228.png"
   ];
 
   return (
@@ -38,35 +25,42 @@ const DepoimentosSection = () => {
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-          {depoimentos.map((depoimento, index) => (
-            <Card key={index} className="border-0 shadow-elegant hover:shadow-glow transition-all duration-300 bg-white">
-              <CardContent className="p-8">
-                <div className="flex items-center mb-4">
-                  <Quote className="w-8 h-8 text-fitwell-orange mb-2" />
-                </div>
-                
-                <p className="text-fitwell-dark/80 mb-6 italic leading-relaxed">
-                  "{depoimento.texto}"
-                </p>
-
-                <div className="flex items-center mb-4">
-                  {[...Array(depoimento.rating)].map((_, i) => (
-                    <Star key={i} className="w-4 h-4 text-fitwell-orange fill-current" />
-                  ))}
-                </div>
-
-                <div className="border-t pt-4">
-                  <h4 className="font-semibold text-fitwell-dark">
-                    {depoimento.nome}
-                  </h4>
-                  <p className="text-sm text-fitwell-dark/60">
-                    {depoimento.idade} • {depoimento.modalidade}
-                  </p>
-                </div>
-              </CardContent>
-            </Card>
-          ))}
+        <div className="max-w-5xl mx-auto">
+          <Carousel
+            opts={{
+              align: "start",
+              loop: true,
+            }}
+            plugins={[
+              Autoplay({
+                delay: 4000,
+              }),
+            ]}
+            className="w-full"
+          >
+            <CarouselContent className="-ml-2 md:-ml-4">
+              {reviewImages.map((image, index) => (
+                <CarouselItem key={index} className="pl-2 md:pl-4 basis-full md:basis-1/2">
+                  <div className="p-4 md:p-6 hover:z-10 transition-all">
+                    <Card className="border-0 shadow-elegant hover:shadow-glow transition-all duration-300 bg-white">
+                      <CardContent className="p-0">
+                        <div className="rounded-lg overflow-hidden">
+                          <img 
+                            src={image} 
+                            alt={`Avaliação de cliente ${index + 1}`}
+                            className="w-full h-auto object-contain"
+                            loading="lazy"
+                          />
+                        </div>
+                      </CardContent>
+                    </Card>
+                  </div>
+                </CarouselItem>
+              ))}
+            </CarouselContent>
+            <CarouselPrevious className="left-2 md:-left-12" />
+            <CarouselNext className="right-2 md:-right-12" />
+          </Carousel>
         </div>
 
         {/* Call to Action */}
@@ -75,15 +69,10 @@ const DepoimentosSection = () => {
             Quer compartilhar sua experiência conosco?
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
-            <a
-              href="https://www.google.com/search?sca_esv=fe6362944b97d7fe&rlz=1C1NDCM_pt-BRBR957BR957&sxsrf=AE3TifOIy4bZDzv26ANrzAxmS01CUh65QQ:1757448129834&si=AMgyJEuzsz2NflaaWzrzdpjxXXRaJ2hfdMsbe_mSWso6src8s7SxpYUgbpllsiib9T3i6B_s5kTYFEeAOSJ8QDw0E-tfYrXPgaQEw5XQRXIrVXZpxPLivp1CsTi7N9k6qw1lbMWhnXSSUfUxMYi8jCcQP_hS0accdA%3D%3D&q=Espa%C3%A7o+Fitwell+%7C+Canela+RS+Reviews&sa=X&ved=2ahUKEwjIufW7vMyPAxWmK7kGHWU7IKcQ0bkNegQIQhAE&biw=1536&bih=695&dpr=1.25"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="bg-white rounded-lg px-6 py-3 shadow-md hover:bg-fitwell-orange-light/20 transition-colors"
-            >
-              <span className="text-fitwell-dark font-semibold">⭐ 4.8/5</span>
-              <span className="text-fitwell-dark/60 ml-2">• 115+ avaliações</span>
-            </a>
+            <div className="bg-white rounded-lg px-6 py-3 shadow-md">
+              <span className="text-fitwell-dark font-semibold">⭐ 4.9/5</span>
+              <span className="text-fitwell-dark/60 ml-2">• 200+ avaliações</span>
+            </div>
           </div>
         </div>
       </div>

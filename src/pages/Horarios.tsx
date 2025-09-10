@@ -5,36 +5,60 @@ import { ArrowLeft, Clock, Phone, MessageCircle } from "lucide-react";
 import { Link } from "react-router-dom";
 const Horarios = () => {
   const horarios = [{
-    hora: "07:30",
-    segunda: "NATAÇÃO ADULTO",
+    hora: "06:45",
+    segunda: "LOC PIS",
     terca: "",
-    quarta: "NATAÇÃO ADULTO",
+    quarta: "LOC PIS",
     quinta: "",
+    sexta: "LOC PIS",
+    sabado: ""
+  },{
+    hora: "07:00",
+    segunda: "",
+    terca: "LOC PIS",
+    quarta: "",
+    quinta: "LOC PIS",
     sexta: "",
     sabado: ""
   }, {
+    hora: "07:30",
+    segunda: "COND",
+    terca: "",
+    quarta: "COND",
+    quinta: "",
+    sexta: "LOC PIS",
+    sabado: ""
+  },{
     hora: "07:45",
     segunda: "",
-    terca: "HIDROGINÁSTICA",
+    terca: ["HIDROGINÁSTICA", "LOC PIS"],
     quarta: "",
-    quinta: "HIDROGINÁSTICA",
+    quinta: ["HIDROGINÁSTICA", "LOC PIS"],
     sexta: "",
     sabado: ""
   }, {
     hora: "08:15",
-    segunda: "NATAÇÃO ADULTO",
+    segunda: "LOC PIS",
     terca: "",
-    quarta: "NATAÇÃO ADULTO",
+    quarta: "LOC PIS",
     quinta: "",
-    sexta: "NATAÇÃO ADULTO",
+    sexta: "",
     sabado: ""
+  },{
+    hora: "08:20",
+    segunda: "",
+    terca: "",
+    quarta: "",
+    quinta: "",
+    sexta: "",
+    sabado: "LOC PIS"
   }, {
     hora: "08:30",
     segunda: "",
-    terca: "NATAÇÃO ADULTO",
+    terca: ["LOC PIS", "NATAÇÃO ADULTO"],
     quarta: "",
-    quinta: "NATAÇÃO ADULTO",
-    sexta: "",
+    quinta: ["LOC PIS", "NATAÇÃO ADULTO"],
+    sexta: "NATAÇÃO ADULTO INICIANTE",
     sabado: ""
   }, {
     hora: "09:00",
@@ -43,133 +67,229 @@ const Horarios = () => {
     quarta: "",
     quinta: "",
     sexta: "",
-    sabado: "NATAÇÃO BEBÊ"
+    sabado: "NATAÇÃO BEBÊ III"
   }, {
     hora: "09:05",
-    segunda: "NATAÇÃO INFANTIL",
+    segunda: "LOC PIS",
     terca: "",
-    quarta: "NATAÇÃO INFANTIL",
+    quarta: "LOC PIS",
     quinta: "",
-    sexta: "NATAÇÃO INFANTIL",
-    sabado: ""
-  }, {
-    hora: "09:15",
-    segunda: "",
-    terca: "NATAÇÃO INFANTIL",
-    quarta: "",
-    quinta: "NATAÇÃO INFANTIL",
     sexta: "",
     sabado: ""
   }, {
+    hora: "09:10",
+    segunda: ["APREND II", "ADAP II"],
+    terca: "",
+    quarta: ["APREND I", "ADAP II"],
+    quinta: "",
+    sexta: ["APRED II", "LOC PIS"],
+    sabado: ""
+  },{
+    hora: "09:15",
+    segunda: "",
+    terca: ["APREND I", "TREIN. MIRIM"],
+    quarta: "",
+    quinta: ["APREND I", "TREIN. MIRIM"],
+    sexta: "",
+    sabado: ""
+  }, {
+    hora: "09:16",
+    segunda: "",
+    terca: "",
+    quarta: "",
+    quinta: ["PERSONAL ADAP I"],
+    sexta: "",
+    sabado: ""
+  },{
     hora: "09:30",
     segunda: "",
     terca: "",
     quarta: "",
     quinta: "",
     sexta: "",
-    sabado: "NATAÇÃO BEBÊ"
+    sabado: "NATAÇÃO BEBÊ II"
   }, {
-    hora: "09:50",
-    segunda: "NATAÇÃO INFANTIL",
+    hora: "09:45",
+    segunda: "",
     terca: "",
-    quarta: "NATAÇÃO INFANTIL",
+    quarta: "",
+    quinta: "LOC PIS",
+    sexta: "",
+    sabado: ""
+  },{
+    hora: "09:50",
+    segunda: [ "ADAP I", "ADAP II", "LOC PIS"],
+    terca: "",
+    quarta: ["ADAP I", "ADAP II", "LOC PIS"],
     quinta: "",
-    sexta: "NATAÇÃO INFANTIL",
+    sexta: ["ADAP II", "APREND I", "LOC PIS"],
     sabado: ""
   }, {
     hora: "10:00",
     segunda: "",
-    terca: "NATAÇÃO BEBÊ",
+    terca: ["ADAP I", "ADAP II"],
     quarta: "",
-    quinta: "NATAÇÃO BEBÊ",
+    quinta: ["ADAP I", "ADAP II"],
     sexta: "",
-    sabado: "NATAÇÃO INFANTIL"
+    sabado: ["LOC PIS (2 raias)", "ADAP II"]
   }, {
     hora: "10:30",
-    segunda: "NATAÇÃO INFANTIL",
-    terca: "NATAÇÃO INFANTIL",
-    quarta: "NATAÇÃO INFANTIL",
-    quinta: "NATAÇÃO INFANTIL",
-    sexta: "NATAÇÃO INFANTIL",
+    segunda: ["ADAP I", "APREND I", "LOC PIS"],
+    terca: ["ADAP I", "APREND I", "APREND II", "LOC PIS"],
+    quarta: ["ADAP I", "APREND I", "LOC PIS"],
+    quinta: ["LOC PIS"],
+    sexta: ["ADAP II", "APREND I", "LOC PIS"],
     sabado: ""
   }, {
     hora: "10:40",
     segunda: "",
+    terca: ["NATAÇÃO BEBÊS III"],
+    quarta: "",
+    quinta: ["NATAÇÃO BEBÊS III"],
+    sexta: "",
+    sabado: "ADAP I"
+  }, {
+    hora: "10:45",
+    segunda: "",
     terca: "",
     quarta: "",
     quinta: "",
     sexta: "",
-    sabado: "NATAÇÃO INFANTIL"
-  }, {
+    sabado: "LOC PIS (2 raias)"
+  },{
     hora: "11:10",
-    segunda: "NATAÇÃO BEBÊ",
+    segunda: ["LOC PIS", "NAT"],
     terca: "",
-    quarta: "NATAÇÃO BEBÊ",
+    quarta: ["LOC PIS", "NAT"],
     quinta: "",
-    sexta: "NATAÇÃO INFANTIL",
+    sexta: ["ADAP I", "ADAP II", "LOC PIS"],
+    sabado: ""
+  }, {
+    hora: "11:15",
+    segunda: "",
+    terca:["NATAÇÃO ADULTO COND"],
+    quarta: "",
+    quinta: ["NATAÇÃO ADULTO COND"],
+    sexta: "",
+    sabado: ""
+  }, {
+    hora: "11:20",
+    segunda: "",
+    terca: "",
+    quarta: "",
+    quinta: "",
+    sexta: "",
+    sabado: "ADAP I"
+  },{
+    hora: "12:00",
+    segunda: "LOC PIS",
+    terca: "LOC PIS",
+    quarta: "LOC PIS",
+    quinta: "LOC PIS",
+    sexta: [],
+    sabado: ""
+  },{
+    hora: "13:00",
+    segunda: "",
+    terca: "LOC PIS",
+    quarta: "",
+    quinta: "LOC PIS",
+    sexta: "",
+    sabado: ""
+  },{
+    hora: "14:00",
+    segunda: "",
+    terca: "LOC PIS",
+    quarta: "",
+    quinta: "LOC PIS",
+    sexta: "",
     sabado: ""
   }, {
     hora: "14:45",
     segunda: "",
-    terca: "HIDROGINÁSTICA",
+    terca:["HIDROGINÁSTICA", "LOC PIS"],
     quarta: "",
-    quinta: "HIDROGINÁSTICA",
+    quinta: ["HIDROGINÁSTICA", "LOC PIS"],
     sexta: "",
     sabado: ""
   }, {
     hora: "15:30",
-    segunda: "",
-    terca: "APRENDIZ MISTO",
-    quarta: "",
-    quinta: "APRENDIZ MISTO",
-    sexta: "",
+    segunda: "LOC PIS",
+    terca: ["APREND I", "APREND II", "LOC PIS"],
+    quarta: "LOC PIS",
+    quinta: ["APREND I", "APREND II", "LOC PIS"],
+    sexta: "LOC PIS",
     sabado: ""
   }, {
-    hora: "16:15",
-    segunda: "NATAÇÃO ADULTO",
-    terca: "NATAÇÃO ADULTO",
-    quarta: "NATAÇÃO ADULTO",
-    quinta: "NATAÇÃO ADULTO",
+    hora: "16:00",
+    segunda: "RITMOS",
+    terca: "",
+    quarta: "",
+    quinta: "",
     sexta: "",
+    sabado: ""
+  },{
+    hora: "16:15",
+    segunda: "",
+    terca: "NATAÇÃO ADULTO COND",
+    quarta: "",
+    quinta: "NATAÇÃO ADULTO COND",
+    sexta: "LOC PIS",
     sabado: ""
   }, {
     hora: "17:00",
-    segunda: "NATAÇÃO INFANTIL",
-    terca: "NATAÇÃO INFANTIL",
-    quarta: "NATAÇÃO INFANTIL",
-    quinta: "NATAÇÃO INFANTIL",
+    segunda: ["TREN"],
+    terca: "LOC PIS",
+    quarta: ["TREN", "LOC PIS"],
+    quinta: "",
+    sexta: "LOC PIS",
+    sabado: ""
+  },{
+    hora: "17:05",
+    segunda: "",
+    terca: "",
+    quarta: ["NATAÇÃO INICIANTE"],
+    quinta: "",
     sexta: "",
     sabado: ""
   }, {
+    hora: "17:10",
+    segunda: ["ADAP I"],
+    terca: "",
+    quarta: ["ADAP I"],
+    quinta: "",
+    sexta: "",
+    sabado: ""
+  },{
     hora: "17:50",
-    segunda: "NATAÇÃO INFANTIL",
-    terca: "NATAÇÃO INFANTIL",
-    quarta: "NATAÇÃO INFANTIL",
-    quinta: "NATAÇÃO INFANTIL",
+    segunda: ["ADAP I", "ADAP II", "APREND I"],
+    terca: "",
+    quarta: ["ADAP I", "ADAP II", "APREND I"],
+    quinta: "",
+    sexta: ["ADAP I"],
+    sabado: ""
+  },{
+    hora: "18:00",
+    segunda: "",
+    terca: "FITDANCE",
+    quarta: "",
+    quinta: "FITDANCE",
     sexta: "",
     sabado: ""
   }, {
     hora: "18:30",
-    segunda: "NATAÇÃO INFANTIL",
-    terca: "NATAÇÃO INFANTIL",
-    quarta: "NATAÇÃO INFANTIL",
-    quinta: "NATAÇÃO INFANTIL",
-    sexta: "NATAÇÃO INFANTIL",
-    sabado: ""
-  }, {
-    hora: "19:15",
-    segunda: "",
-    terca: "HIDROGINÁSTICA",
-    quarta: "",
-    quinta: "HIDROGINÁSTICA",
-    sexta: "",
-    sabado: ""
+    segunda: ["TREIN"],
+    terca: ["ADAP II", "APREND I", "APREND II"],
+    quarta: ["TREIN"],
+    quinta: ["ADAP II", "APREND I", "APREND II"],
+    sexta: ["APREND I"],
+    sabado: [""]
   }, {
     hora: "19:15",
     segunda: "HIDRO HIIT",
-    terca: "",
-    quarta: "HIDRO HIIT",
-    quinta: "",
+    terca: ["HIDROGINÁSTICA", "LOC PIS", "NATAÇÃO ADULTO COND"],
+    quarta: ["HIDRO HIIT"],
+    quinta: ["HIDROGINÁSTICA", "LOC PIS", "NATAÇÃO ADULTO COND"],
     sexta: "HIDRO HIIT",
     sabado: ""
   }, {
@@ -181,11 +301,19 @@ const Horarios = () => {
     sexta: "",
     sabado: ""
   }, {
+    hora: "20:00",
+    segunda: "NATAÇÃO INICIANTE",
+    terca: "NATAÇÃO ADULTO COND",
+    quarta: "NATAÇÃO INICIANTE",
+    quinta: "NATAÇÃO ADULTO COND",
+    sexta: "LOC PIS",
+    sabado: ""
+  },{
     hora: "20:45",
-    segunda: "NATAÇÃO ADULTO",
-    terca: "NATAÇÃO ADULTO",
-    quarta: "NATAÇÃO ADULTO",
-    quinta: "NATAÇÃO ADULTO",
+    segunda: "",
+    terca: "NATAÇÃO ADULTO INICIANTE",
+    quarta: "",
+    quinta: "NATAÇÃO ADULTO INICIANTE",
     sexta: "",
     sabado: ""
   }];
@@ -241,41 +369,103 @@ const Horarios = () => {
                 </tr>
               </thead>
               <tbody>
-                {horarios.map((item, index) => <tr key={index} className="hover:bg-gray-50">
+                {horarios.map((item, index) => (
+                  <tr key={index} className="hover:bg-gray-50">
                     <td className="border border-gray-300 p-3 font-semibold bg-fitwell-orange text-white text-center">
                       {item.hora}
                     </td>
+                    {/* Segunda */}
                     <td className="border border-gray-300 p-2">
-                      {item.segunda && <div className={`${getActivityColor(item.segunda)} p-2 rounded text-center text-sm font-semibold`}>
-                          {item.segunda}
-                        </div>}
+                      {Array.isArray(item.segunda)
+                        ? item.segunda.map((act, i) => (
+                            <div key={i} className={`${getActivityColor(act)} p-2 rounded text-center text-sm font-semibold mb-1`}>
+                              {act}
+                            </div>
+                          ))
+                        : item.segunda && (
+                            <div className={`${getActivityColor(item.segunda)} p-2 rounded text-center text-sm font-semibold`}>
+                              {item.segunda}
+                            </div>
+                          )
+                      }
                     </td>
+                    {/* Terça */}
                     <td className="border border-gray-300 p-2">
-                      {item.terca && <div className={`${getActivityColor(item.terca)} p-2 rounded text-center text-sm font-semibold`}>
-                          {item.terca}
-                        </div>}
+                      {Array.isArray(item.terca)
+                        ? item.terca.map((act, i) => (
+                            <div key={i} className={`${getActivityColor(act)} p-2 rounded text-center text-sm font-semibold mb-1`}>
+                              {act}
+                            </div>
+                          ))
+                        : item.terca && (
+                            <div className={`${getActivityColor(item.terca)} p-2 rounded text-center text-sm font-semibold`}>
+                              {item.terca}
+                            </div>
+                          )
+                      }
                     </td>
+                    {/* Quarta */}
                     <td className="border border-gray-300 p-2">
-                      {item.quarta && <div className={`${getActivityColor(item.quarta)} p-2 rounded text-center text-sm font-semibold`}>
-                          {item.quarta}
-                        </div>}
+                      {Array.isArray(item.quarta)
+                        ? item.quarta.map((act, i) => (
+                            <div key={i} className={`${getActivityColor(act)} p-2 rounded text-center text-sm font-semibold mb-1`}>
+                              {act}
+                            </div>
+                          ))
+                        : item.quarta && (
+                            <div className={`${getActivityColor(item.quarta)} p-2 rounded text-center text-sm font-semibold`}>
+                              {item.quarta}
+                            </div>
+                          )
+                      }
                     </td>
+                    {/* Quinta */}
                     <td className="border border-gray-300 p-2">
-                      {item.quinta && <div className={`${getActivityColor(item.quinta)} p-2 rounded text-center text-sm font-semibold`}>
-                          {item.quinta}
-                        </div>}
+                      {Array.isArray(item.quinta)
+                        ? item.quinta.map((act, i) => (
+                            <div key={i} className={`${getActivityColor(act)} p-2 rounded text-center text-sm font-semibold mb-1`}>
+                              {act}
+                            </div>
+                          ))
+                        : item.quinta && (
+                            <div className={`${getActivityColor(item.quinta)} p-2 rounded text-center text-sm font-semibold`}>
+                              {item.quinta}
+                            </div>
+                          )
+                      }
                     </td>
+                    {/* Sexta */}
                     <td className="border border-gray-300 p-2">
-                      {item.sexta && <div className={`${getActivityColor(item.sexta)} p-2 rounded text-center text-sm font-semibold`}>
-                          {item.sexta}
-                        </div>}
+                      {Array.isArray(item.sexta)
+                        ? item.sexta.map((act, i) => (
+                            <div key={i} className={`${getActivityColor(act)} p-2 rounded text-center text-sm font-semibold mb-1`}>
+                              {act}
+                            </div>
+                          ))
+                        : item.sexta && (
+                            <div className={`${getActivityColor(item.sexta)} p-2 rounded text-center text-sm font-semibold`}>
+                              {item.sexta}
+                            </div>
+                          )
+                      }
                     </td>
+                    {/* Sábado */}
                     <td className="border border-gray-300 p-2">
-                      {item.sabado && <div className={`${getActivityColor(item.sabado)} p-2 rounded text-center text-sm font-semibold`}>
-                          {item.sabado}
-                        </div>}
+                      {Array.isArray(item.sabado)
+                        ? item.sabado.map((act, i) => (
+                            <div key={i} className={`${getActivityColor(act)} p-2 rounded text-center text-sm font-semibold mb-1`}>
+                              {act}
+                            </div>
+                          ))
+                        : item.sabado && (
+                            <div className={`${getActivityColor(item.sabado)} p-2 rounded text-center text-sm font-semibold`}>
+                              {item.sabado}
+                            </div>
+                          )
+                      }
                     </td>
-                  </tr>)}
+                  </tr>
+                ))}
               </tbody>
             </table>
           </div>
