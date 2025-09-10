@@ -66,7 +66,7 @@ const ModalidadesSection = () => {
       title: "Nutrição",
       description: "Alimentação equilibrada é parte essencial da sua saúde",
       color: "bg-fitwell-blue",
-      image: nutricaoImg,
+      image: "/nutri.jpg",
       link: "/nutricao"
     }
   ];
