@@ -27,15 +27,25 @@ const Sobre = () => {
   ];
 
   const equipePedagogica = [
-    { nome: "Marilda Mengue Rocha", cargo: "Ginástica" },
-    { nome: "Danielle Mantovaneli", cargo: "Natação e hidro Hiit" },
-    { nome: "Magda Cabral", cargo: "Natação e hidroginástica" },
-    { nome: "Jose Costa Neto", cargo: "Treinamento físico (musculação)" },
-    { nome: "Rocio Falcon", cargo: "Natação, Pilates e treinamento físico" },
-    { nome: "Paulo Correa", cargo: "Natação" },
-    { nome: "Cleide Godoy", cargo: "Natação" },
-    { nome: "Patricia Athaydes", cargo: "Natação" },
-    { nome: "Eduardo Mundstock", cargo: "Treinamento físico (musculação)" }
+    { nome: "Marilda Mengue Rocha", cargo: "Professora de Ed. Física" },
+    { nome: "Cleide Godoy", cargo: "Professora de  Ed. Física" },
+    { nome: "Daniele Mantovaneli", cargo: "Professora de  Ed. Física" },
+    { nome: "Magda Cabral", cargo: "Professora de  Ed. Física" },
+    { nome: "Rocio Falcon", cargo: "Professora de  Ed. Física" },
+    { nome: "Sabrina Novello", cargo: "Professora de  Ed. Física" },
+    { nome: "Suzana Maria Dischinger", cargo: "Professora de  Ed. Física" },
+    { nome: "Cristian Freitas", cargo: "Professor de  Ed. Física" },
+    { nome: "Marcondes Gomes Cansanção", cargo: "Professor de  Ed. Física" },
+    { nome: "Paulo Fernando Correa Pereira", cargo: "Professor de  Ed. Física" },
+    { nome: "Daniela Carpinteiro Cravalho", cargo: "Estagiária de Ed. Física" },
+    { nome: "Carlos Alberto da Silva Junior", cargo: "Estagiário de Ed. Física" },
+    { nome: "Jonas Alves Barbosa", cargo: "Estagiário de Ed. Física" },
+  ];
+
+  const terceirizados = [
+    { nome: "Murilo Benites Seixas", cargo: " Fisioterapeuta" },
+    { nome: "Pricila Catuci Negri", cargo: "Profª de Fitdance" },
+    { nome: "Rodrigo Vargas", cargo: "Professor de Dança" }
   ];
 
   return (
@@ -214,7 +224,31 @@ const Sobre = () => {
                       <div className="flex flex-col">
                         <div className="h-64 bg-gray-50 flex items-center justify-center">
                           <div className="w-16 h-16 rounded-full bg-gradient-to-br from-fitwell-blue-light to-fitwell-orange flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
-                            <Award className="w-8 h-8 text-white" />
+                            <Users className="w-8 h-8 text-white" />
+                          </div>
+                        </div>
+                        <div className="p-6 text-center">
+                          <h4 className="font-bold text-fitwell-dark text-lg mb-2">{membro.nome}</h4>
+                          <p className="text-gray-600 text-sm">{membro.cargo}</p>
+                        </div>
+                      </div>
+                    </CardContent>
+                  </Card>
+                ))}
+              </div>
+            </div>
+
+            {/* terceirizados */}
+            <div>
+              <h3 className="text-2xl font-bold text-fitwell-dark mb-8 text-center">Equipe Terceirizada</h3>
+              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                {terceirizados.map((membro, index) => (
+                  <Card key={index} className="overflow-hidden group hover:scale-105 transition-all duration-300 hover:shadow-lg bg-white border border-gray-200/30">
+                    <CardContent className="p-0">
+                      <div className="flex flex-col">
+                        <div className="h-64 bg-gray-50 flex items-center justify-center">
+                          <div className="w-16 h-16 rounded-full bg-gradient-to-br from-fitwell-blue-light to-fitwell-orange flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
+                            <Users className="w-8 h-8 text-white" />
                           </div>
                         </div>
                         <div className="p-6 text-center">
