@@ -195,7 +195,7 @@ const Fisioterapia = () => {
               Agende sua avaliação com o fisioterapeuta parceiro e comece seu tratamento no nosso espaço, com toda a estrutura que você precisa.
             </p>
             <Button variant="hero" size="xl">
-              Agendar avaliação com fisioterapeuta
+              Quero contatar o fisioterapeuta
             </Button>
           </div>
         </div>

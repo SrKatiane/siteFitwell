@@ -57,7 +57,6 @@ const Hidroginastica = () => {
     "Alivia dores nas articulações",
     "Traz sensação de leveza e bem-estar",
     "Estimula a socialização e reduz o estresse",
-    "No caso do HidroHIIT: acelera o metabolismo e queima gordura"
   ];
 
   return (
@@ -188,7 +187,7 @@ const Hidroginastica = () => {
         <div className="container mx-auto px-4 lg:px-8">
           <div className="max-w-4xl mx-auto">
             <h2 className="text-3xl md:text-4xl font-bold text-center mb-12">
-              Benefícios da <span className="text-fitwell-blue-light">Hidro</span> e <span className="text-fitwell-orange">HidroHIIT</span>
+              Benefícios da <span className="text-fitwell-blue-light">Hidroginástica</span> (exercícios físicos na água)
             </h2>
             
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4">

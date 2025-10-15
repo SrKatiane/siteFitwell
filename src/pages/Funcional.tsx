@@ -206,10 +206,10 @@ const Funcional = () => {
               Quer começar?
             </h2>
             <p className="text-lg text-fitwell-dark/80 mb-8">
-              Agende sua aula experimental gratuita e venha descobrir como o funcional pode transformar sua rotina.
+              Agende uma aula e venha descobrir como o funcional pode transformar sua rotina.
             </p>
             <Button variant="hero" size="xl">
-              Quero experimentar o funcional
+              Quero conhecer o treinamento funcional
             </Button>
           </div>
         </div>

@@ -4,61 +4,37 @@ import Footer from "@/components/Footer";
 import { ArrowLeft, Clock, Phone, MessageCircle } from "lucide-react";
 import { Link } from "react-router-dom";
 const Horarios = () => {
-  const horarios = [{
-    hora: "06:45",
-    segunda: "LOC PIS",
-    terca: "",
-    quarta: "LOC PIS",
-    quinta: "",
-    sexta: "LOC PIS",
-    sabado: ""
-  },{
-    hora: "07:00",
-    segunda: "",
-    terca: "LOC PIS",
-    quarta: "",
-    quinta: "LOC PIS",
-    sexta: "",
-    sabado: ""
-  }, {
+  const horarios = [ {
     hora: "07:30",
-    segunda: "NATAÇÃO ADULTO COND",
+    segunda: "NATAÇÃO ADULTO",
     terca: "",
-    quarta: "NATAÇÃO ADULTO COND",
+    quarta: "NATAÇÃO ADULTO",
     quinta: "",
-    sexta: "LOC PIS",
+    sexta: "",
     sabado: ""
   },{
     hora: "07:45",
     segunda: "",
-    terca: ["HIDROGINÁSTICA", "LOC PIS"],
+    terca: ["HIDROGINÁSTICA"],
     quarta: "",
-    quinta: ["HIDROGINÁSTICA", "LOC PIS"],
+    quinta: ["HIDROGINÁSTICA"],
     sexta: "",
     sabado: ""
   }, {
     hora: "08:15",
-    segunda: "LOC PIS",
+    segunda: "NATAÇÃO ADULTO",
     terca: "",
-    quarta: "LOC PIS",
+    quarta: "NATAÇÃO ADULTO",
     quinta: "",
     sexta: "",
     sabado: ""
-  },{
-    hora: "08:20",
-    segunda: "",
-    terca: "",
-    quarta: "",
-    quinta: "",
-    sexta: "",
-    sabado: "LOC PIS"
   }, {
     hora: "08:30",
     segunda: "",
-    terca: ["LOC PIS", "NATAÇÃO ADULTO"],
+    terca: ["NATAÇÃO ADULTO"],
     quarta: "",
-    quinta: ["LOC PIS", "NATAÇÃO ADULTO"],
-    sexta: "NATAÇÃO ADULTO INICIANTE",
+    quinta: ["NATAÇÃO ADULTO"],
+    sexta: "NATAÇÃO ADULTO",
     sabado: ""
   }, {
     hora: "09:00",
@@ -67,62 +43,38 @@ const Horarios = () => {
     quarta: "",
     quinta: "",
     sexta: "",
-    sabado: "NATAÇÃO BEBÊ III"
-  }, {
-    hora: "09:05",
-    segunda: "LOC PIS",
-    terca: "",
-    quarta: "LOC PIS",
-    quinta: "",
-    sexta: "",
-    sabado: ""
+    sabado: "NATAÇÃO BEBÊ"
   }, {
     hora: "09:10",
     segunda: ["NATAÇÃO INFANTIL"],
     terca: "",
     quarta: ["NATAÇÃO INFANTIL"],
     quinta: "",
-    sexta: ["NATAÇÃO INFANTIL", "LOC PIS"],
+    sexta: ["NATAÇÃO INFANTIL"],
     sabado: ""
   },{
     hora: "09:15",
     segunda: "",
-    terca: ["NATAÇÃO INFANTIL", "TREIN. MIRIM"],
+    terca: ["NATAÇÃO INFANTIL", "TREINAMENTO NATAÇÃO"],
     quarta: "",
-    quinta: ["NATAÇÃO INFANTIL", "TREIN. MIRIM"],
+    quinta: ["NATAÇÃO INFANTIL", "TREINAMENTO NATAÇÃO"],
     sexta: "",
     sabado: ""
   }, {
-    hora: "09:16",
-    segunda: "",
-    terca: "",
-    quarta: "",
-    quinta: ["PERSONAL ADAP I"],
-    sexta: "",
-    sabado: ""
-  },{
     hora: "09:30",
     segunda: "",
     terca: "",
     quarta: "",
     quinta: "",
     sexta: "",
-    sabado: "NATAÇÃO BEBÊ II"
+    sabado: "NATAÇÃO BEBÊ"
   }, {
-    hora: "09:45",
-    segunda: "",
-    terca: "",
-    quarta: "",
-    quinta: "LOC PIS",
-    sexta: "",
-    sabado: ""
-  },{
     hora: "09:50",
-    segunda: [ "NATAÇÃO INFANTIL", "LOC PIS"],
+    segunda: [ "NATAÇÃO INFANTIL"],
     terca: "",
-    quarta: ["NATAÇÃO INFANTIL", "LOC PIS"],
+    quarta: ["NATAÇÃO INFANTIL"],
     quinta: "",
-    sexta: ["NATAÇÃO INFANTIL", "LOC PIS"],
+    sexta: ["NATAÇÃO INFANTIL"],
     sabado: ""
   }, {
     hora: "10:00",
@@ -131,45 +83,37 @@ const Horarios = () => {
     quarta: "",
     quinta: ["NATAÇÃO INFANTIL"],
     sexta: "",
-    sabado: ["LOC PIS (2 raias)", "NATAÇÃO INFANTIL"]
+    sabado: ["NATAÇÃO INFANTIL"]
   }, {
     hora: "10:30",
-    segunda: ["NATAÇÃO INFANTIL", "LOC PIS"],
-    terca: ["NATAÇÃO INFANTIL", "LOC PIS"],
-    quarta: ["NATAÇÃO INFANTIL", "LOC PIS"],
-    quinta: ["LOC PIS"],
-    sexta: ["NATAÇÃO INFANTIL", "LOC PIS"],
+    segunda: ["NATAÇÃO INFANTIL"],
+    terca: [""],
+    quarta: ["NATAÇÃO INFANTIL"],
+    quinta: "",
+    sexta: ["NATAÇÃO INFANTIL"],
     sabado: ""
   }, {
     hora: "10:40",
     segunda: "",
-    terca: ["NATAÇÃO BEBÊS III"],
+    terca: ["NATAÇÃO BEBÊS"],
     quarta: "",
-    quinta: ["NATAÇÃO BEBÊS III"],
+    quinta: ["NATAÇÃO BEBÊS"],
     sexta: "",
     sabado: "NATAÇÃO INFANTIL"
   }, {
-    hora: "10:45",
+    hora: "11:10",
     segunda: "",
     terca: "",
     quarta: "",
     quinta: "",
-    sexta: "",
-    sabado: "LOC PIS (2 raias)"
-  },{
-    hora: "11:10",
-    segunda: ["LOC PIS", "NAT"],
-    terca: "",
-    quarta: ["LOC PIS", "NAT"],
-    quinta: "",
-    sexta: ["NATAÇÃO INFANTIL", "LOC PIS"],
+    sexta: ["NATAÇÃO INFANTIL"],
     sabado: ""
   }, {
     hora: "11:15",
     segunda: "",
-    terca:["NATAÇÃO ADULTO COND"],
+    terca:["NATAÇÃO ADULTO"],
     quarta: "",
-    quinta: ["NATAÇÃO ADULTO COND"],
+    quinta: ["NATAÇÃO ADULTO"],
     sexta: "",
     sabado: ""
   }, {
@@ -181,44 +125,20 @@ const Horarios = () => {
     sexta: "",
     sabado: "NATAÇÃO INFANTIL"
   },{
-    hora: "12:00",
-    segunda: "LOC PIS",
-    terca: "LOC PIS",
-    quarta: "LOC PIS",
-    quinta: "LOC PIS",
-    sexta: "",
-    sabado: ""
-  },{
-    hora: "13:00",
-    segunda: "",
-    terca: "LOC PIS",
-    quarta: "",
-    quinta: "LOC PIS",
-    sexta: "",
-    sabado: ""
-  },{
-    hora: "14:00",
-    segunda: "",
-    terca: "LOC PIS",
-    quarta: "",
-    quinta: "LOC PIS",
-    sexta: "",
-    sabado: ""
-  }, {
     hora: "14:45",
     segunda: "",
-    terca:["HIDROGINÁSTICA", "LOC PIS"],
+    terca:["HIDROGINÁSTICA"],
     quarta: "",
-    quinta: ["HIDROGINÁSTICA", "LOC PIS"],
+    quinta: ["HIDROGINÁSTICA"],
     sexta: "",
     sabado: ""
   }, {
     hora: "15:30",
-    segunda: "LOC PIS",
-    terca: ["NATAÇÃO INFANTIL", "LOC PIS"],
-    quarta: "LOC PIS",
-    quinta: ["NATAÇÃO INFANTIL", "LOC PIS"],
-    sexta: "LOC PIS",
+    segunda: "",
+    terca: ["NATAÇÃO INFANTIL"],
+    quarta: "",
+    quinta: ["NATAÇÃO INFANTIL"],
+    sexta: "",
     sabado: ""
   }, {
     hora: "16:00",
@@ -230,42 +150,34 @@ const Horarios = () => {
     sabado: ""
   },{
     hora: "16:15",
-    segunda: "",
-    terca: "NATAÇÃO ADULTO COND",
-    quarta: "",
-    quinta: "NATAÇÃO ADULTO COND",
-    sexta: "LOC PIS",
+    segunda: "NATAÇÃO ADULTO",
+    terca: "NATAÇÃO ADULTO",
+    quarta: "NATAÇÃO ADULTO",
+    quinta: "NATAÇÃO ADULTO",
+    sexta: "",
     sabado: ""
   }, {
     hora: "17:00",
-    segunda: ["TREIN"],
-    terca: "LOC PIS",
-    quarta: ["TREIN", "LOC PIS"],
-    quinta: "",
-    sexta: "LOC PIS",
-    sabado: ""
-  },{
-    hora: "17:05",
-    segunda: "",
-    terca: "",
-    quarta: ["NATAÇÃO ADULTO INICIANTE"],
-    quinta: "",
+    segunda: ["TREINAMENTO NATAÇÃO"],
+    terca: ["TREINAMENTO NATAÇÃO"],
+    quarta: ["TREINAMENTO NATAÇÃO"],
+    quinta: ["TREINAMENTO NATAÇÃO"],
     sexta: "",
     sabado: ""
   }, {
     hora: "17:10",
     segunda: ["NATAÇÃO INFANTIL"],
     terca: "",
-    quarta: ["NATAÇÃO INFANTIL"],
+    quarta: [""],
     quinta: "",
     sexta: "",
     sabado: ""
   },{
     hora: "17:50",
     segunda: ["NATAÇÃO INFANTIL"],
-    terca: "",
+    terca: "NATAÇÃO INFANTIL",
     quarta: ["NATAÇÃO INFANTIL"],
-    quinta: "",
+    quinta: "NATAÇÃO INFANTIL",
     sexta: ["NATAÇÃO INFANTIL"],
     sabado: ""
   },{
@@ -278,42 +190,34 @@ const Horarios = () => {
     sabado: ""
   }, {
     hora: "18:30",
-    segunda: ["TREIN"],
+    segunda: ["TREINAMENTO NATAÇÃO"],
     terca: ["NATAÇÃO INFANTIL"],
-    quarta: ["TREIN"],
+    quarta: ["TREINAMENTO NATAÇÃO"],
     quinta: ["NATAÇÃO INFANTIL"],
     sexta: ["NATAÇÃO INFANTIL"],
     sabado: ""
   }, {
     hora: "19:15",
     segunda: "HIDRO HIIT",
-    terca: ["HIDROGINÁSTICA", "LOC PIS", "NATAÇÃO ADULTO COND"],
+    terca: ["HIDROGINÁSTICA"],
     quarta: ["HIDRO HIIT"],
-    quinta: ["HIDROGINÁSTICA", "LOC PIS", "NATAÇÃO ADULTO COND"],
+    quinta: ["HIDROGINÁSTICA"],
     sexta: "HIDRO HIIT",
     sabado: ""
   }, {
-    hora: "18:00",
-    segunda: "",
-    terca: "FITDANCE",
-    quarta: "",
-    quinta: "FITDANCE",
-    sexta: "",
-    sabado: ""
-  }, {
     hora: "20:00",
-    segunda: "NATAÇÃO ADULTO INICIANTE",
-    terca: "NATAÇÃO ADULTO COND",
-    quarta: "NATAÇÃO ADULTO INICIANTE",
-    quinta: "NATAÇÃO ADULTO COND",
-    sexta: "LOC PIS",
+    segunda: "NATAÇÃO ADULTO",
+    terca: "NATAÇÃO ADULTO",
+    quarta: "NATAÇÃO ADULTO",
+    quinta: "NATAÇÃO ADULTO",
+    sexta: "",
     sabado: ""
   },{
     hora: "20:45",
     segunda: "",
-    terca: "NATAÇÃO ADULTO INICIANTE",
+    terca: "NATAÇÃO ADULTO",
     quarta: "",
-    quinta: "NATAÇÃO ADULTO INICIANTE",
+    quinta: "NATAÇÃO ADULTO",
     sexta: "",
     sabado: ""
   }];
