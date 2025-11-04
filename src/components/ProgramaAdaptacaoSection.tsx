@@ -55,6 +55,7 @@ const ProgramaAdaptacaoSection = () => {
               );
             })}
           </div>
+          
 
           {/* Desktop Layout */}
           <div className="hidden md:grid grid-cols-3 gap-8 mb-12">
