@@ -228,9 +228,12 @@ const Horarios = () => {
     if (activity.includes("HIDROGINÁSTICA")) return "bg-yellow-400 text-black";
     if (activity.includes("HIDRO HIIT")) return "bg-red-500 text-white";
     if (activity.includes("FITDANCE")) return "bg-green-600 text-white";
-    if (activity.includes("APRENDIZ MISTO")) return "bg-cyan-300 text-black";
+    if (activity.includes("RITMOS")) return "bg-purple-500 text-white";
+    if (activity.includes("TREINAMENTO NATAÇÃO")) return "bg-cyan-300 text-black";
     return "bg-gray-100 text-gray-800";
   };
+
+
   return <div className="min-h-screen bg-background">
       <Header />
       
