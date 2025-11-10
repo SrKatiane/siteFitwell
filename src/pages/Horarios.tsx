@@ -229,7 +229,7 @@ const Horarios = () => {
     if (activity.includes("HIDRO HIIT")) return "bg-red-500 text-white";
     if (activity.includes("FITDANCE")) return "bg-green-600 text-white";
     if (activity.includes("RITMOS")) return "bg-purple-500 text-white";
-    if (activity.includes("TREINAMENTO NATAÇÃO")) return "bg-cyan-300 text-black";
+    if (activity.includes("TREINAMENTO NATAÇÃO")) return "bg-cyan-200 text-black";
     return "bg-gray-100 text-gray-800";
   };
 
@@ -406,8 +406,12 @@ const Horarios = () => {
                 <span className="text-sm">Fit Dance</span>
               </div>
               <div className="flex items-center gap-2">
-                <div className="w-4 h-4 bg-cyan-300 rounded"></div>
-                <span className="text-sm">Aprendiz Misto</span>
+                <div className="w-4 h-4 bg-purple-600 rounded"></div>
+                <span className="text-sm">Ritmos</span>
+              </div>
+              <div className="flex items-center gap-2">
+                <div className="w-4 h-4 bg-cyan-200 rounded"></div>
+                <span className="text-sm">Treinamento Natação</span>
               </div>
             </div>
           </div>
